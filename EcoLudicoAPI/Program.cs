@@ -1,3 +1,5 @@
+using EcoLudicoAPI.Context;
+using EcoLudicoAPI.Repository.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -13,7 +15,8 @@ string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConne
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
 //----------------------------------
-
+builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
+//----------------------------------
 
 
 

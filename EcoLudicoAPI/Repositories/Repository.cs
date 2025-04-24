@@ -1,7 +1,7 @@
-﻿
+﻿using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 
-namespace EcoLudicoAPI.Repository
+namespace EcoLudicoAPI.Repositories
 {
     public class Repository<T> : IRepository<T> where T : class
     {
@@ -12,15 +12,11 @@ namespace EcoLudicoAPI.Repository
             _context = context;
         }
 
-        public IEnumerable<T> GetAll()
+        public Task<IEnumerable<T>> GetAllAsync()
         {
             throw new NotImplementedException();
         }
-        public T Get(int id)
-        {
-            throw new NotImplementedException();
-        }
-        public T Add()
+        public Task<T?> GetAsync(Expression<Func<T, bool>> predicate)
         {
             throw new NotImplementedException();
         }
@@ -28,10 +24,13 @@ namespace EcoLudicoAPI.Repository
         {
             throw new NotImplementedException();
         }
-        public void Delete(int id)
+        public T Create(T entity)
         {
             throw new NotImplementedException();
         }
-
+        public void Delete(T entity)
+        {
+            throw new NotImplementedException();
+        }     
     }
 }

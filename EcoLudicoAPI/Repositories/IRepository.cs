@@ -1,7 +1,6 @@
 ﻿using System.Linq.Expressions;
-using System.Runtime.Intrinsics.X86;
 
-namespace EcoLudicoAPI.Repository
+namespace EcoLudicoAPI.Repositories
 {
     public interface IRepository<T>
     {
