@@ -1,0 +1,6 @@
+@EcoLudicoAPI_HostAddress = http://localhost:5226
+
+GET {{EcoLudicoAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
