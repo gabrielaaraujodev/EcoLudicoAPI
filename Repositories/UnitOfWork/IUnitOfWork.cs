@@ -15,8 +15,10 @@ namespace EcoLudicoAPI.Repositories.UnitOfWork
         //----------------------------------
         IProjectRepository ProjectRepository { get; }
         IUserRepository UserRepository { get; }
+        ISchoolRepository SchoolRepository { get; }
+        IFavoriteProjectRepository FavoriteProjectRepository { get; }
+        ICommentRepository CommentRepository { get; }
 
         Task CommitAsync();
-        void Dispose();
     }
 }

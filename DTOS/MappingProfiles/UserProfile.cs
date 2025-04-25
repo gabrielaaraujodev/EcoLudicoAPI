@@ -9,7 +9,9 @@ namespace EcoLudicoAPI.MappingProfiles
         public UserProfile()
         {
             CreateMap<User, UserDTO>().ReverseMap();
-            CreateMap<LoginRequestDTO, User>(); 
+            CreateMap<LoginRequestDTO, User>().ReverseMap();
+            CreateMap<UserRegisterDTO, User>().ReverseMap();
+            CreateMap<UserUpdateDTO, User>().ReverseMap();
         }
     }
 }

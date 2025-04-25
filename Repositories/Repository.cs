@@ -12,10 +12,19 @@ namespace EcoLudicoAPI.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, object>> address = null)
         {
-            return await _context.Set<T>().AsNoTracking().ToListAsync();
+            IQueryable<T> query = _context.Set<T>().AsQueryable();
+
+            if (address != null)
+            {
+                query = query.Include(address); 
+            }
+
+            return await query.ToListAsync();
         }
+
+
         public async Task<T?> GetAsync(Expression<Func<T, bool>> predicate)
         {
             return await _context.Set<T>().FirstOrDefaultAsync(predicate);

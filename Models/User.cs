@@ -13,23 +13,24 @@ namespace EcoLudicoAPI.Models
         public UserType Type { get; set; }
 
         [Required, MaxLength(100)]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [Required, EmailAddress]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
         public DateOnly? DateBirth { get; set; }
 
         [Required]
-        public string Password { get; set; }
+        public string Password { get; set; } = string.Empty;
 
-        public Address Address { get; set; }
+        public Address Address { get; set; } 
 
-        public int SchoolId { get; set; }
+        [ForeignKey("School")]
+        public int? SchoolId { get; set; }
         public School? School { get; set; }
 
-        public List<School>? FavoriteSchools { get; set; }
+        public List<School> FavoriteSchools { get; set; } = new();
         public List<FavoriteProject> FavoriteProjects { get; set; } = new();
-        public List<Comment>? MadeComments { get; set; }
+        public List<Comment> MadeComments { get; set; } = new();
     }
 }

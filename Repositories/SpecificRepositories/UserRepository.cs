@@ -1,4 +1,5 @@
-﻿using EcoLudicoAPI.Context;
+﻿using System.Linq.Expressions;
+using EcoLudicoAPI.Context;
 using EcoLudicoAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,7 +14,7 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
             _context = context;
         }
 
-        public async Task<User?> GetUserByEmailAsync(string email)
+        public async Task<User> GetUserByEmailAsync(string email)
         {
             return await _context.Users
                 .Include(user => user.Address)
@@ -31,6 +32,30 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
                 .FirstOrDefaultAsync(user => user.Email == email);
         }
 
+        public async Task<User> GetByIdAsync(int id, Expression<Func<User, object>> address = null)
+        {
+            IQueryable<User> query = _context.Users.AsQueryable();
 
+            if (address != null)
+            {
+                query = query.Include(address);
+            }
+
+            return await query.FirstOrDefaultAsync(u => u.UserId == id);
+        }
+
+        public async Task<User?> GetByIdWithFavoriteSchoolsAsync(int id)
+        {
+            return await _context.Users
+                .Include(u => u.FavoriteSchools)
+                .FirstOrDefaultAsync(u => u.UserId == id);
+        }
+
+        public async Task<User?> GetByIdWithFavoriteProjectsAsync(int id)
+        {
+            return await _context.Users
+                .Include(u => u.FavoriteProjects)
+                .FirstOrDefaultAsync(u => u.UserId == id);
+        }
     }
 }

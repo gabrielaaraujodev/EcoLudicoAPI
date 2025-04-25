@@ -10,20 +10,20 @@ namespace EcoLudicoAPI.Models
         public int ProjectId { get; set; }
 
         [Required, MaxLength(100)]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         public string? Description { get; set; }
         public string? Tutorial { get; set; }
         [Required]
-        public List<string> ImageUrls { get; set; }
-        public AgeRange? AgeRange { get; set; }
+        public List<string>? ImageUrls { get; set; } 
+        public AgeRange AgeRange { get; set; }
         public string? MaterialsList { get; set; }
 
         [Required]
         public int SchoolId { get; set; }
-        public School School { get; set; }
+        public School? School { get; set; }
 
         public List<FavoriteProject> Favoritos { get; set; } = new();
-        public List<Comment>? Comments { get; set; }
+        public List<Comment> Comments { get; set; } = new();
     }
 }
