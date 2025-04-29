@@ -12,12 +12,11 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
         {
             _context = context;
         }
-        public async Task<User?> GetByIdWithCommentsAsync(int id)
+        public async Task<Comment?> GetByIdAsync(int id)
         {
-            return await _context.Users
-                .Include(u => u.MadeComments)
-                .FirstOrDefaultAsync(u => u.UserId == id);
+            return await _context.Comments
+                .Include(c => c.User)    
+                .FirstOrDefaultAsync(c => c.CommentId == id);
         }
-
     }
 }

@@ -25,6 +25,12 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
 
             return await query.ToListAsync();
         }
+
+        public async Task<Project> GetByIdAsync(int projectId)
+        {
+            return await _context.Projects
+                .FirstOrDefaultAsync(p => p.ProjectId == projectId);
+        }
     }
 
 }

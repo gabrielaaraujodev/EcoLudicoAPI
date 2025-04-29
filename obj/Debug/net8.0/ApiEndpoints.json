@@ -47,7 +47,7 @@
   },
   {
     "ContainingType": "EcoLudicoAPI.Controllers.UserController",
-    "Method": "UpdateBasic",
+    "Method": "Update",
     "RelativePath": "api/User/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -84,9 +84,25 @@
   },
   {
     "ContainingType": "EcoLudicoAPI.Controllers.UserController",
-    "Method": "UpdateUserComments",
+    "Method": "GetUserComments",
     "RelativePath": "api/User/{id}/comments",
-    "HttpMethod": "PUT",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcoLudicoAPI.Controllers.UserController",
+    "Method": "DeleteComment",
+    "RelativePath": "api/User/{id}/comments/{commentId}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -96,49 +112,149 @@
         "IsRequired": true
       },
       {
-        "Name": "updatedComments",
-        "Type": "System.Collections.Generic.List\u00601[[EcoLudicoAPI.DTOS.CommentDTO, EcoLudicoAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EcoLudicoAPI.Controllers.UserController",
-    "Method": "UpdateFavoriteProjects",
-    "RelativePath": "api/User/{id}/favorite-projects",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
+        "Name": "commentId",
         "Type": "System.Int32",
         "IsRequired": true
-      },
-      {
-        "Name": "projectIds",
-        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "EcoLudicoAPI.Controllers.UserController",
-    "Method": "UpdateFavoriteSchools",
-    "RelativePath": "api/User/{idUser}/favorite-schools/{idSchool}",
+    "Method": "AddCommentToAProject",
+    "RelativePath": "api/User/{id}/comments/{projectId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "idUser",
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "commentDTO",
+        "Type": "EcoLudicoAPI.DTOS.CommentDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcoLudicoAPI.Controllers.UserController",
+    "Method": "GetFavoriteProjects",
+    "RelativePath": "api/User/{id}/favorite-projects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcoLudicoAPI.Controllers.UserController",
+    "Method": "AddFavoriteProjects",
+    "RelativePath": "api/User/{id}/favorite-projects/{idProject}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idProject",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcoLudicoAPI.Controllers.UserController",
+    "Method": "RemoveFavoriteProject",
+    "RelativePath": "api/User/{id}/favorite-projects/{projectId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcoLudicoAPI.Controllers.UserController",
+    "Method": "GetFavoriteSchools",
+    "RelativePath": "api/User/{id}/favorite-schools",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcoLudicoAPI.Controllers.UserController",
+    "Method": "AddFavoriteSchools",
+    "RelativePath": "api/User/{id}/favorite-schools/{idSchool}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "idSchool",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EcoLudicoAPI.Controllers.UserController",
+    "Method": "RemoveFavoriteSchool",
+    "RelativePath": "api/User/{id}/favorite-schools/{schoolId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "schoolId",
         "Type": "System.Int32",
         "IsRequired": true
       }

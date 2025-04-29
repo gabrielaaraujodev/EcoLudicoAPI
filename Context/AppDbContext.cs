@@ -24,7 +24,15 @@ namespace EcoLudicoAPI.Context
                 .WithOne(u => u.School)
                 .HasForeignKey(u => u.SchoolId)
                 .OnDelete(DeleteBehavior.Restrict);
-        }
 
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.FavoriteSchools)
+                .WithMany(s => s.UsersWhoFavorited)
+                .UsingEntity<Dictionary<string, object>>(
+                    "UserFavoriteSchools", 
+                    j => j.HasOne<School>().WithMany().HasForeignKey("SchoolId"),
+                    j => j.HasOne<User>().WithMany().HasForeignKey("UserId")
+                );
+        }
     }
 }

@@ -8,6 +8,4 @@
         public int ProjectId { get; set; }
         public ProjectDTO? Projeto { get; set; }
     }
-
-
 }

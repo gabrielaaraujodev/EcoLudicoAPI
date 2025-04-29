@@ -20,5 +20,6 @@ namespace EcoLudicoAPI.Models
 
         public List<User> Teachers { get; set; } = new();
         public List<Project> Projects { get; set; } = new();
+        public List<User> UsersWhoFavorited { get; set; } = new();
     }
 }

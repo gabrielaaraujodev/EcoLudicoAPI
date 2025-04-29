@@ -6,5 +6,7 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
     public interface IProjectRepository : IRepository<Project>
     {
         Task<IEnumerable<Project>> GetProjectsByAgeRangeAsync(AgeRange? ageRange);
+
+        Task<Project> GetByIdAsync(int projectId);
     }
 }
