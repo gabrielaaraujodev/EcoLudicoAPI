@@ -25,19 +25,17 @@ namespace EcoLudicoAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<UserDTO>>> GetAll()
         {
-            var users = await _uof.UserRepository.GetAllAsync(u => u.Address);
+            var users = await _uof.UserRepository.GetAllUsersWithDetailsAsync();
 
             var userDTOs = _mapper.Map<IEnumerable<UserDTO>>(users);
 
             return Ok(userDTOs);
         }
 
-
-
         [HttpGet("{id}")]
         public async Task<ActionResult<UserDTO>> GetById(int id)
         {
-            var user = await _uof.UserRepository.GetByIdAsync(id, include => include.Address);
+            var user = await _uof.UserRepository.GetByIdAsync(id);
 
             if (user == null)
                 return NotFound($"Usuário com ID {id} não encontrado.");
@@ -80,57 +78,64 @@ namespace EcoLudicoAPI.Controllers
 
             if (userRegisterDTO.Type == UserType.Professor)
             {
-                if (userRegisterDTO.SchoolId == null)
-                    return BadRequest("Professores devem estar vinculados a uma escola.");
+                if (userRegisterDTO.School == null)
+                    return BadRequest("Professores devem cadastrar uma escola.");
+
+                var school = _mapper.Map<School>(userRegisterDTO.School);
+                var createdSchool = _uof.SchoolRepository.Create(school);              
+
+                var user = _mapper.Map<User>(userRegisterDTO);
+                user.SchoolId = createdSchool.SchoolId;
+                user.Password = userRegisterDTO.Password;
+
+                var newUser = _uof.UserRepository.Create(user);
+                await _uof.CommitAsync();
+
+                var newUserDTO = _mapper.Map<UserDTO>(newUser);
+                return CreatedAtAction(nameof(GetById), new { id = newUser.UserId }, newUserDTO);
             }
-            else
-            {
-                userRegisterDTO.SchoolId = null; 
-            }
 
 
-            var existingUser = await _uof.UserRepository.GetUserByEmailAsync(userRegisterDTO.Email);
+            if (userRegisterDTO.Type == UserType.Doador && userRegisterDTO.School != null)
+                return BadRequest("Doadores não podem cadastrar escola.");
 
-            if (existingUser != null)
-                return Conflict("Este e-mail já está em uso.");
+            // Criação do usuário doador
+            var userDoador = _mapper.Map<User>(userRegisterDTO);
+            userDoador.Password = userRegisterDTO.Password;
 
-            var user = _mapper.Map<User>(userRegisterDTO);
-
-            user.Password = userRegisterDTO.Password;
-
-            var newUser = _uof.UserRepository.Create(user);
+            var createdUserDoador = _uof.UserRepository.Create(userDoador);
             await _uof.CommitAsync();
-            
-            var newUserDTO = _mapper.Map<UserDTO>(newUser);
 
-            return CreatedAtAction(nameof(GetById), new { id = newUser.UserId }, newUserDTO);
+            var doadorDTO = _mapper.Map<UserDTO>(createdUserDoador);
+            return CreatedAtAction(nameof(GetById), new { id = createdUserDoador.UserId }, doadorDTO);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateBasic(int id, [FromBody] UserUpdateDTO userUpdateDTO)
         {
-            if (id != userUpdateDTO.UserId)
-                return BadRequest("Os IDs não coincidem !");
-
             var user = await _uof.UserRepository.GetByIdAsync(id);
-            if (user == null) return NotFound();
+            if (user == null) return NotFound($"O usuário de id = {id} não existe !");
 
-            _mapper.Map(userUpdateDTO, user);
+            _mapper.Map(userUpdateDTO, user); // Atualiza os dados com base no DTO
             _uof.UserRepository.Update(user);
             await _uof.CommitAsync();
 
             return NoContent();
         }
 
-        [HttpPut("{id}/favorite-schools")]
-        public async Task<IActionResult> UpdateFavoriteSchools(int id, [FromBody] List<int> schoolIds)
+        [HttpPost("{idUser}/favorite-schools/{idSchool}")]
+        public async Task<IActionResult> UpdateFavoriteSchools(int idUser, int idSchool)
         {
-            var user = await _uof.UserRepository.GetByIdWithFavoriteSchoolsAsync(id);
-            if (user == null) return NotFound();
+            var user = await _uof.UserRepository.GetByIdAsync(idUser);
+            if (user == null) return NotFound("Usuário não encontrado");
 
-            var schools = await _uof.SchoolRepository.GetSchoolsByIdsAsync(schoolIds);
+            var school = await _uof.SchoolRepository.GetSchoolsByIdsAsync(idSchool);
+            if (school == null) return NotFound("Escola não encontrada");
 
-            user.FavoriteSchools = schools;
+            if (user.FavoriteSchools.Any(s => s.SchoolId == idSchool))
+                return BadRequest("Escola já está nos favoritos");
+
+            user.FavoriteSchools.Add(school); 
             _uof.UserRepository.Update(user);
             await _uof.CommitAsync();
 

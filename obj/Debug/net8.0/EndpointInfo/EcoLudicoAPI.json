@@ -240,14 +240,23 @@
         }
       }
     },
-    "/api/User/{id}/favorite-schools": {
-      "put": {
+    "/api/User/{idUser}/favorite-schools/{idSchool}": {
+      "post": {
         "tags": [
           "User"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "idUser",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "idSchool",
             "in": "path",
             "required": true,
             "schema": {
@@ -256,37 +265,6 @@
             }
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              }
-            },
-            "text/json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "type": "array",
-                "items": {
-                  "type": "integer",
-                  "format": "int32"
-                }
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -560,16 +538,16 @@
         },
         "additionalProperties": false
       },
-      "SchoolDTO": {
+      "SchoolCreateDTO": {
+        "required": [
+          "address",
+          "name"
+        ],
         "type": "object",
         "properties": {
-          "schoolId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "name": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
           "address": {
             "$ref": "#/components/schemas/AddressDTO"
@@ -581,19 +559,30 @@
           "operatingHours": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SchoolDTO": {
+        "required": [
+          "address",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "minLength": 1,
+            "type": "string"
           },
-          "teachers": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/UserDTO"
-            },
+          "address": {
+            "$ref": "#/components/schemas/AddressDTO"
+          },
+          "contact": {
+            "type": "string",
             "nullable": true
           },
-          "projects": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ProjectDTO"
-            },
+          "operatingHours": {
+            "type": "string",
             "nullable": true
           }
         },
@@ -691,10 +680,8 @@
           "address": {
             "$ref": "#/components/schemas/AddressDTO"
           },
-          "schoolId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
+          "school": {
+            "$ref": "#/components/schemas/SchoolCreateDTO"
           }
         },
         "additionalProperties": false
@@ -715,10 +702,6 @@
         ],
         "type": "object",
         "properties": {
-          "userId": {
-            "type": "integer",
-            "format": "int32"
-          },
           "name": {
             "maxLength": 100,
             "minLength": 1,

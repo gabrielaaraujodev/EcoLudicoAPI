@@ -9,6 +9,7 @@ namespace EcoLudicoAPI.MappingProfiles
         public SchoolProfile()
         {
             CreateMap<School, SchoolDTO>().ReverseMap();
+            CreateMap<SchoolCreateDTO, School>().ReverseMap();
         }
     }
 }

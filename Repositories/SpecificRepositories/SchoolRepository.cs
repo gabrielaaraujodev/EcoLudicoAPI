@@ -14,11 +14,10 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
         }
 
 
-        public async Task<List<School>> GetSchoolsByIdsAsync(List<int> ids)
+        public async Task<School?> GetSchoolsByIdsAsync(int id)
         {
             return await _context.Schools
-                .Where(s => ids.Contains(s.SchoolId))
-                .ToListAsync();
+                .FirstOrDefaultAsync(school => school.SchoolId == id);
         }
 
     }

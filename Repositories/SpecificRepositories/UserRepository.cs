@@ -32,16 +32,16 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
                 .FirstOrDefaultAsync(user => user.Email == email);
         }
 
-        public async Task<User> GetByIdAsync(int id, Expression<Func<User, object>> address = null)
+        public async Task<User?> GetByIdAsync(int id)
         {
-            IQueryable<User> query = _context.Users.AsQueryable();
-
-            if (address != null)
-            {
-                query = query.Include(address);
-            }
-
-            return await query.FirstOrDefaultAsync(u => u.UserId == id);
+            return await _context.Users
+                .Include(u => u.Address)
+                .Include(u => u.School)
+                    .ThenInclude(s => s.Address)
+                .Include(u => u.FavoriteSchools)
+                .Include(u => u.FavoriteProjects)
+                .Include(u => u.MadeComments)
+                .FirstOrDefaultAsync(u => u.UserId == id);
         }
 
         public async Task<User?> GetByIdWithFavoriteSchoolsAsync(int id)
@@ -57,5 +57,17 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
                 .Include(u => u.FavoriteProjects)
                 .FirstOrDefaultAsync(u => u.UserId == id);
         }
+        public async Task<IEnumerable<User>> GetAllUsersWithDetailsAsync()
+        {
+            return await _context.Users
+                .Include(u => u.Address)
+                .Include(u => u.School)
+                    .ThenInclude(s => s.Address)
+                .Include(u => u.FavoriteProjects)
+                .Include(u => u.FavoriteSchools)
+                .Include(u => u.MadeComments)
+                .ToListAsync();
+        }
+
     }
 }

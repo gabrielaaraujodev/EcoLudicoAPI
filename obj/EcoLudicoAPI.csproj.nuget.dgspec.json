@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\EcoLudicoAPI.csproj": {}
+    "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\ecoludicoapi\\EcoLudicoAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\EcoLudicoAPI.csproj": {
+    "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\ecoludicoapi\\EcoLudicoAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\EcoLudicoAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\ecoludicoapi\\EcoLudicoAPI.csproj",
         "projectName": "EcoLudicoAPI",
-        "projectPath": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\EcoLudicoAPI.csproj",
+        "projectPath": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\ecoludicoapi\\EcoLudicoAPI.csproj",
         "packagesPath": "C:\\Users\\Gabriel Araujo (Dev)\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\obj\\",
+        "outputPath": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\ecoludicoapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

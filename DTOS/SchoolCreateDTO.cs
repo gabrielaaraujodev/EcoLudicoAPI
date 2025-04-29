@@ -2,7 +2,7 @@
 
 namespace EcoLudicoAPI.DTOS
 {
-    public class SchoolDTO
+    public class SchoolCreateDTO
     {
         [Required]
         public string Name { get; set; } = string.Empty;
@@ -14,4 +14,5 @@ namespace EcoLudicoAPI.DTOS
 
         public string OperatingHours { get; set; } = string.Empty;
     }
+
 }

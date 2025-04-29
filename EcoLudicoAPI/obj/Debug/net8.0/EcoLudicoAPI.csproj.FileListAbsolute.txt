@@ -1,8 +1,0 @@
-C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\EcoLudicoAPI.csproj.AssemblyReference.cache
-C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\EcoLudicoAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\EcoLudicoAPI.AssemblyInfoInputs.cache
-C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\EcoLudicoAPI.AssemblyInfo.cs
-C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\EcoLudicoAPI.csproj.CoreCompileInputs.cache
-C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\EcoLudicoAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\EcoLudicoAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\EcoLudicoAPI.sourcelink.json
