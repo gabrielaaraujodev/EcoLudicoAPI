@@ -2,15 +2,14 @@
 
 namespace EcoLudicoAPI.DTOS
 {
-    public class ProjectDTO
+    public class ProjectCreateDTO
     {
-        public int ProjectId { get; set; }
-        public string Name { get; set; } = String.Empty;
+        public string Name { get; set; } = string.Empty;
         public string? Description { get; set; }
         public string? Tutorial { get; set; }
         public List<string> ImageUrls { get; set; } = new();
-        public AgeRange? AgeRange { get; set; }
+        public AgeRange AgeRange { get; set; }
         public string? MaterialsList { get; set; }
-        public List<CommentDTO>? Comments { get; set; }
     }
+
 }
