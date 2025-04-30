@@ -114,7 +114,9 @@ namespace EcoLudicoAPI.Controllers
         public async Task<IActionResult> Update(int id, [FromBody] UserUpdateDTO userUpdateDTO)
         {
             var user = await _uof.UserRepository.GetByIdAsync(id);
-            if (user == null) return NotFound($"O usuário de id = {id} não existe !");
+
+            if (user == null)
+                return NotFound($"O usuário de id = {id} não existe !");
 
             _mapper.Map(userUpdateDTO, user); 
             _uof.UserRepository.Update(user);
@@ -159,6 +161,9 @@ namespace EcoLudicoAPI.Controllers
                         Number = school.Address.Number,
                         City = school.Address.City,
                         State = school.Address.State,
+                        Complement = school.Address.Complement,
+                        Latitude = school.Address.Latitude,
+                        Longitude = school.Address.Longitude,
                     }
                 }).ToList();
 

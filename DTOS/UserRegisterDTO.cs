@@ -23,7 +23,7 @@ namespace EcoLudicoAPI.DTOS
         [Required]
         public AddressDTO? Address { get; set; }
 
-        public SchoolCreateDTO? School { get; set; } // substituindo SchoolId
+        public SchoolCreateDTO? School { get; set; } 
     }
 
 

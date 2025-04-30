@@ -62,7 +62,7 @@ namespace EcoLudicoAPI.Controllers
             await _uof.CommitAsync();
 
             var result = _mapper.Map<ProjectDTO>(project);
-            return Ok(result);
+            return CreatedAtAction(nameof(GetProjectById), new { id = result.ProjectId }, result);
         }
 
         [HttpPut("{id}")]
@@ -120,7 +120,5 @@ namespace EcoLudicoAPI.Controllers
             var projectDtos = _mapper.Map<IEnumerable<ProjectDTO>>(projects);
             return Ok(projectDtos);
         }
-
-
     }
 }

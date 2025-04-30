@@ -48,6 +48,7 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
         {
             return await _context.Users
                 .Include(u => u.FavoriteSchools)
+                    .ThenInclude(s => s.Address)
                 .FirstOrDefaultAsync(u => u.UserId == id);
         }
 
