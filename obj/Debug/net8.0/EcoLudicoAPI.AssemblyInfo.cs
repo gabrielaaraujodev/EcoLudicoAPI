@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoLudicoAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbf35192bc80415cb17e8a93e2a58c593573077e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d05a1fe14faa594a289795e91bb31387d495f55")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoLudicoAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoLudicoAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

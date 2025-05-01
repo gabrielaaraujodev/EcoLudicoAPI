@@ -38,6 +38,8 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
                 .Include(u => u.Address)
                 .Include(u => u.School)
                     .ThenInclude(s => s.Address)
+                .Include(u => u.School)
+                    .ThenInclude(s => s.Projects) 
                 .Include(u => u.FavoriteSchools)
                 .Include(u => u.FavoriteProjects)
                 .Include(u => u.MadeComments)

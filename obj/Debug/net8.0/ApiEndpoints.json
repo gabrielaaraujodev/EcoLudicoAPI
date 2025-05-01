@@ -80,6 +80,11 @@
         "IsRequired": true
       },
       {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
         "Name": "projectUpdateDTO",
         "Type": "EcoLudicoAPI.DTOS.ProjectUpdateDTO",
         "IsRequired": true

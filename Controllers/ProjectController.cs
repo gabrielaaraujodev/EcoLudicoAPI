@@ -49,14 +49,13 @@ namespace EcoLudicoAPI.Controllers
             var user = await _uof.UserRepository.GetByIdAsync(userId);
 
             if (user == null || user.Type != UserType.Professor)
-                return Forbid("Apenas professores podem criar projetos.");
+                return BadRequest("Apenas professores podem criar projetos ou seu professor não encontrado.");
 
             if (user.SchoolId == 0)
                 return BadRequest("Professor não possui escola vinculada.");
 
             var project = _mapper.Map<Project>(dto);
             project.SchoolId = user.SchoolId.Value;
-
 
             _uof.ProjectRepository.Create(project);
             await _uof.CommitAsync();
@@ -66,10 +65,8 @@ namespace EcoLudicoAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProject(int id, [FromBody] ProjectUpdateDTO projectUpdateDTO)
+        public async Task<IActionResult> UpdateProject(int id, [FromQuery] int userId, [FromBody] ProjectUpdateDTO projectUpdateDTO)
         {
-            var userId = projectUpdateDTO.UserId; 
-
             var user = await _uof.UserRepository.GetByIdAsync(userId);
             if (user == null || user.Type != UserType.Professor)
                 return Unauthorized("Usuário não autorizado.");
@@ -102,7 +99,7 @@ namespace EcoLudicoAPI.Controllers
 
             var user = await _uof.UserRepository.GetByIdAsync(userId);
             if (user == null || user.Type != UserType.Professor)
-                return Forbid("Somente professores podem excluir projetos.");
+                return NotFound("Somente professores podem excluir projetos ou usuário não encontrado.");
 
             _uof.ProjectRepository.Delete(project);
             await _uof.CommitAsync();

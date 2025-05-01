@@ -9,6 +9,8 @@ namespace EcoLudicoAPI.MappingProfiles
         public ProjectProfile()
         {
             CreateMap<Project, ProjectDTO>().ReverseMap();
+            CreateMap<ProjectCreateDTO, Project>().ReverseMap();
+            CreateMap<ProjectUpdateDTO, Project>().ReverseMap();
         }
     }
 }
