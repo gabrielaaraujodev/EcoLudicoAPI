@@ -277,10 +277,20 @@ namespace EcoLudicoAPI.Controllers
         public async Task<IActionResult> GetUserComments(int id)
         {
             var user = await _uof.UserRepository.GetByIdAsync(id);
-            if (user == null) return NotFound("Usuário não encontrado.");
+            if (user == null)
+                return NotFound("Usuário não encontrado.");
 
-            var comments = user.MadeComments; 
-            return Ok(comments);
+            var comments = user.MadeComments;
+
+            var commentDtos = comments.Select(c => new CommentResponseDTO
+            {
+                CommentId = c.CommentId,
+                Content = c.Content,
+                CreationDate = c.CreationDate,
+                UserName = c.User.Name // pegando apenas o nome
+            }).ToList();
+
+            return Ok(commentDtos);
         }
 
         [HttpPost("{id}/comments/{projectId}")]

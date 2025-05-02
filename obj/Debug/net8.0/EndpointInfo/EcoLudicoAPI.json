@@ -1007,9 +1007,6 @@
             "type": "integer",
             "format": "int32"
           },
-          "user": {
-            "$ref": "#/components/schemas/UserDTO"
-          },
           "projectId": {
             "type": "integer",
             "format": "int32"

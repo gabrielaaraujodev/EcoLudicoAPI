@@ -24,7 +24,7 @@ namespace EcoLudicoAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ProjectDTO>>> GetAllProjects()
         {
-            var projects = await _uof.ProjectRepository.GetAllAsync();
+            var projects = await _uof.ProjectRepository.GetAllAsync(p => p.Comments);
             if (projects == null || !projects.Any())
                 return NotFound("Nenhum projeto encontrado.");
 
@@ -49,7 +49,7 @@ namespace EcoLudicoAPI.Controllers
             var user = await _uof.UserRepository.GetByIdAsync(userId);
 
             if (user == null || user.Type != UserType.Professor)
-                return BadRequest("Apenas professores podem criar projetos ou seu professor não encontrado.");
+                return BadRequest("Apenas professores podem criar projetos ou professor não encontrado.");
 
             if (user.SchoolId == 0)
                 return BadRequest("Professor não possui escola vinculada.");
@@ -99,7 +99,7 @@ namespace EcoLudicoAPI.Controllers
 
             var user = await _uof.UserRepository.GetByIdAsync(userId);
             if (user == null || user.Type != UserType.Professor)
-                return NotFound("Somente professores podem excluir projetos ou usuário não encontrado.");
+                return NotFound("Somente professores podem excluir projetos ou professor não encontrado.");
 
             _uof.ProjectRepository.Delete(project);
             await _uof.CommitAsync();

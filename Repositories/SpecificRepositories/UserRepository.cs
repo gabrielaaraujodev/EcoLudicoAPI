@@ -41,7 +41,9 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
                 .Include(u => u.School)
                     .ThenInclude(s => s.Projects) 
                 .Include(u => u.FavoriteSchools)
+                    .ThenInclude(fs => fs.Address) 
                 .Include(u => u.FavoriteProjects)
+                    .ThenInclude(fp => fp.Projeto) 
                 .Include(u => u.MadeComments)
                 .FirstOrDefaultAsync(u => u.UserId == id);
         }
