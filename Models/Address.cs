@@ -19,7 +19,7 @@ namespace EcoLudicoAPI.Models
         [MaxLength(50)]
         public string City { get; set; } = string.Empty;
 
-        [MaxLength(2)]
+        [MaxLength(50)]
         public string State { get; set; } = string.Empty;
 
         public string Latitude { get; set; } = string.Empty;

@@ -20,8 +20,16 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
 //----------------------------------
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+//----------------------------------
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowMyOrigin",
+        policy => policy.WithOrigins("http://localhost:5173")
+                       .AllowAnyMethod()
+                       .AllowAnyHeader());
+});
 
-
+builder.Services.AddControllers();
 
 
 
@@ -34,7 +42,7 @@ var app = builder.Build();
 
 
 
-
+app.UseCors("AllowMyOrigin");
 
 if (app.Environment.IsDevelopment())
 {

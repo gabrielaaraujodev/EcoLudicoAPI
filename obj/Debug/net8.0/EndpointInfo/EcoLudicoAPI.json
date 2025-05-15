@@ -923,7 +923,7 @@
             "nullable": true
           },
           "state": {
-            "maxLength": 2,
+            "maxLength": 50,
             "type": "string",
             "nullable": true
           },
