@@ -39,7 +39,6 @@ namespace EcoLudicoAPI.Controllers
             var schoolDTO = _mapper.Map<SchoolDTO>(school);
             return Ok(schoolDTO);
         }
-
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateSchool(int id, [FromBody] SchoolUpdateDTO schoolUpdateDTO)
         {
@@ -48,10 +47,16 @@ namespace EcoLudicoAPI.Controllers
                 return NotFound();
 
             _mapper.Map(schoolUpdateDTO, school);
-            await _uof.CommitAsync();
 
+            if (school.Address != null && schoolUpdateDTO.Address != null)
+            {
+                _mapper.Map(schoolUpdateDTO.Address, school.Address);
+            }
+
+            await _uof.CommitAsync();
             return NoContent();
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSchool(int id)

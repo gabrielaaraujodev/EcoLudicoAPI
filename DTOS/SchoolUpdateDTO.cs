@@ -1,19 +1,16 @@
-﻿using EcoLudicoAPI.Models;
+﻿using EcoLudicoAPI.DTOS;
 using System.ComponentModel.DataAnnotations;
 
-namespace EcoLudicoAPI.DTOS
+public class SchoolUpdateDTO
 {
-    public class SchoolUpdateDTO
-    {
-        [Required, MaxLength(100)]
-        public string Name { get; set; } = string.Empty;
+    [Required, MaxLength(100)]
+    public string Name { get; set; } = string.Empty;
 
-        [Required, MaxLength(150)]
-        public Address Address { get; set; }
+    [Required]
+    public AddressDTO Address { get; set; } = new AddressDTO();
 
-        [Phone]
-        public string Contact { get; set; } = string.Empty;
+    [Phone]
+    public string Contact { get; set; } = string.Empty;
 
-        public string OperatingHours { get; set; } = string.Empty;
-    }
+    public string OperatingHours { get; set; } = string.Empty;
 }

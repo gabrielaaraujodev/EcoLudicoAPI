@@ -895,49 +895,6 @@
   },
   "components": {
     "schemas": {
-      "Address": {
-        "type": "object",
-        "properties": {
-          "addressId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "street": {
-            "maxLength": 100,
-            "type": "string",
-            "nullable": true
-          },
-          "number": {
-            "maxLength": 10,
-            "type": "string",
-            "nullable": true
-          },
-          "complement": {
-            "maxLength": 50,
-            "type": "string",
-            "nullable": true
-          },
-          "city": {
-            "maxLength": 50,
-            "type": "string",
-            "nullable": true
-          },
-          "state": {
-            "maxLength": 50,
-            "type": "string",
-            "nullable": true
-          },
-          "latitude": {
-            "type": "string",
-            "nullable": true
-          },
-          "longitude": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "AddressDTO": {
         "type": "object",
         "properties": {
@@ -1210,7 +1167,7 @@
             "type": "string"
           },
           "address": {
-            "$ref": "#/components/schemas/Address"
+            "$ref": "#/components/schemas/AddressDTO"
           },
           "contact": {
             "type": "string",

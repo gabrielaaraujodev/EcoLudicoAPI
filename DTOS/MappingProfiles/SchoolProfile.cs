@@ -10,6 +10,9 @@ namespace EcoLudicoAPI.MappingProfiles
         {
             CreateMap<School, SchoolDTO>().ReverseMap();
             CreateMap<SchoolCreateDTO, School>().ReverseMap();
+            CreateMap<SchoolUpdateDTO, School>()
+            .ForMember(dest => dest.Address, opt => opt.Ignore());
+            CreateMap<AddressDTO, Address>();
         }
     }
 }

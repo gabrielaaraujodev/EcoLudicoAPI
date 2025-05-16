@@ -200,7 +200,7 @@
       },
       {
         "Name": "schoolUpdateDTO",
-        "Type": "EcoLudicoAPI.DTOS.SchoolUpdateDTO",
+        "Type": "SchoolUpdateDTO",
         "IsRequired": true
       }
     ],

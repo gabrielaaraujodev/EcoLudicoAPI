@@ -287,7 +287,7 @@ namespace EcoLudicoAPI.Controllers
                 CommentId = c.CommentId,
                 Content = c.Content,
                 CreationDate = c.CreationDate,
-                UserName = c.User.Name // pegando apenas o nome
+                UserName = c.User.Name 
             }).ToList();
 
             return Ok(commentDtos);

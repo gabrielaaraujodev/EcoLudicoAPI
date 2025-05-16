@@ -17,7 +17,6 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
         public async Task<School?> GetSchoolsByIdsAsync(int id)
         {
             return await _context.Schools
-                .AsNoTracking()
                 .Include(s => s.Address)
                 .Include(s => s.Teachers)
                 .Include(s => s.Projects)
