@@ -140,6 +140,22 @@
     ]
   },
   {
+    "ContainingType": "EcoLudicoAPI.Controllers.ProjectController",
+    "Method": "GetProjectsByUserId",
+    "RelativePath": "api/Project/user/projects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "EcoLudicoAPI.Controllers.SchoolController",
     "Method": "GetAllSchools",
     "RelativePath": "api/School",

@@ -2,6 +2,7 @@
 using EcoLudicoAPI.DTOS;
 using EcoLudicoAPI.Enums;
 using EcoLudicoAPI.Models;
+using EcoLudicoAPI.Repositories.SpecificRepositories;
 using EcoLudicoAPI.Repositories.UnitOfWork;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -43,6 +44,47 @@ namespace EcoLudicoAPI.Controllers
             return Ok(projectDTO);
         }
 
+        //[HttpGet("user/projects")]
+        //public async Task<IActionResult> GetProjectsByUserId([FromQuery] int userId)
+        //{
+        //    var user = await _uof.UserRepository.GetByIdAsync(userId);
+        //    if (user == null)
+        //        return NotFound("Usuário não encontrado.");
+
+        //    if (user.Type != UserType.Professor) 
+        //        return BadRequest("Somente professores possuem projetos.");
+
+        //    var projects = await _uof.ProjectRepository
+        //        .GetAllAsync(p => p.SchoolId == user.SchoolId);
+
+        //    if (projects == null || !projects.Any())
+        //        return NotFound("Nenhum projeto cadastrado para esta escola.");
+
+        //    var projectDtos = _mapper.Map<IEnumerable<ProjectDTO>>(projects);
+        //    return Ok(projectDtos);
+        //}
+
+        [HttpGet("user/projects")]
+        public async Task<IActionResult> GetProjectsByUserId(int userId)
+        {
+            var user = await _uof.UserRepository.GetByIdAsync(userId);
+
+            if (user == null)
+                return NotFound("Usuário não encontrado.");
+
+            if (user.Type != UserType.Professor)
+                return BadRequest("Usuário não é um professor.");
+
+            if (user.SchoolId == null)
+                return BadRequest("Professor não está vinculado a nenhuma escola.");
+
+            var projects = await _uof.ProjectRepository
+                .GetProjectsBySchoolIdAsync(user.SchoolId.Value);
+
+            return Ok(projects);
+        }
+
+
         [HttpPost]
         public async Task<IActionResult> CreateProject([FromBody] ProjectCreateDTO dto, [FromQuery] int userId)
         {
@@ -81,7 +123,7 @@ namespace EcoLudicoAPI.Controllers
             if (project.SchoolId != user.SchoolId)
                 return Forbid("Este projeto não pertence à sua escola.");
 
-            _mapper.Map(projectUpdateDTO, project); 
+            _mapper.Map(projectUpdateDTO, project);
 
             _uof.ProjectRepository.Update(project);
             await _uof.CommitAsync();

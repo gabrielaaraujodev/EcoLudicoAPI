@@ -220,7 +220,7 @@ namespace EcoLudicoAPI.Controllers
                     ProjectId = fp.Projeto.ProjectId,
                     Name = fp.Projeto.Name,
                     Description = fp.Projeto.Description,
-                    ImageUrls = fp.Projeto.ImageUrls,
+                    ImageUrls = fp.Projeto.ImageUrls.Select(img => img.Url).ToList(),
                     AgeRange = fp.Projeto.AgeRange.ToString()
                 }).ToList();
 

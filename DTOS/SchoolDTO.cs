@@ -8,7 +8,7 @@ namespace EcoLudicoAPI.DTOS
         public string Name { get; set; } = string.Empty;
 
         [Required]
-        public AddressDTO Address { get; set; }
+        public AddressDTO? Address { get; set; }
 
         public string Contact { get; set; } = string.Empty;
 

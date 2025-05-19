@@ -34,6 +34,16 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
             return await _context.Projects
                 .FirstOrDefaultAsync(p => p.ProjectId == projectId);
         }
+
+        public async Task<IEnumerable<Project>> GetProjectsBySchoolIdAsync(int schoolId)
+        {
+            return await _context.Projects
+                .Include(p => p.ImageUrls)
+                .Where(p => p.SchoolId == schoolId)
+                .ToListAsync();
+        }
+
+
     }
 
 }

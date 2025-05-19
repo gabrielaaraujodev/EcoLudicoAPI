@@ -8,5 +8,7 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
         Task<IEnumerable<Project>> GetProjectsByAgeRangeAsync(AgeRange? ageRange);
 
         Task<Project> GetByIdAsync(int projectId);
+
+        Task<IEnumerable<Project>> GetProjectsBySchoolIdAsync(int schoolId);
     }
 }

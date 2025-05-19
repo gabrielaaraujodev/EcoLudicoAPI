@@ -28,6 +28,12 @@ builder.Services.AddCors(options =>
                        .AllowAnyMethod()
                        .AllowAnyHeader());
 });
+// ---------------------------------
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+});
+
 
 builder.Services.AddControllers();
 

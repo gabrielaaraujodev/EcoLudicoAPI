@@ -18,6 +18,7 @@ namespace EcoLudicoAPI.Models
 
         public string OperatingHours { get; set; } = string.Empty;
 
+        
         public List<User> Teachers { get; set; } = new();
         public List<Project> Projects { get; set; } = new();
         public List<User> UsersWhoFavorited { get; set; } = new();

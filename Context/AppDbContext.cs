@@ -5,8 +5,8 @@ namespace EcoLudicoAPI.Context
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base (options)
-        {}
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        { }
 
         public DbSet<User> Users { get; set; }
         public DbSet<School> Schools { get; set; }
@@ -29,10 +29,16 @@ namespace EcoLudicoAPI.Context
                 .HasMany(u => u.FavoriteSchools)
                 .WithMany(s => s.UsersWhoFavorited)
                 .UsingEntity<Dictionary<string, object>>(
-                    "UserFavoriteSchools", 
+                    "UserFavoriteSchools",
                     j => j.HasOne<School>().WithMany().HasForeignKey("SchoolId"),
                     j => j.HasOne<User>().WithMany().HasForeignKey("UserId")
                 );
+
+            modelBuilder.Entity<Project>()
+                .HasMany(p => p.ImageUrls)
+                .WithOne(i => i.Project)
+                .HasForeignKey(i => i.ProjectId);
+
         }
     }
 }

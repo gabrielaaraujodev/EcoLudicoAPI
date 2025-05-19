@@ -15,7 +15,7 @@ namespace EcoLudicoAPI.Models
         public string? Description { get; set; }
         public string? Tutorial { get; set; }
         [Required]
-        public List<string>? ImageUrls { get; set; } 
+        public List<ImageUrl> ImageUrls { get; set; } = new();
         public AgeRange AgeRange { get; set; }
         public string? MaterialsList { get; set; }
 
@@ -23,7 +23,7 @@ namespace EcoLudicoAPI.Models
         public int SchoolId { get; set; }
         public School? School { get; set; }
 
-        public List<FavoriteProject> Favoritos { get; set; } = new();
+        // public List<FavoriteProject> Favoritos { get; set; } = new();
         public List<Comment> Comments { get; set; } = new();
     }
 }
