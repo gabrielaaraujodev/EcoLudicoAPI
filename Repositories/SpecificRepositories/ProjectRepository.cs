@@ -32,6 +32,11 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
         public async Task<Project> GetByIdAsync(int projectId)
         {
             return await _context.Projects
+                .Include(p => p.ImageUrls) 
+                .Include(p => p.Comments)  
+                    .ThenInclude(c => c.User) 
+                .Include(p => p.School)     
+                    .ThenInclude(s => s.Teachers) 
                 .FirstOrDefaultAsync(p => p.ProjectId == projectId);
         }
 

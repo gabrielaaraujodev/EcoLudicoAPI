@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using EcoLudico.DTOS;
 using EcoLudicoAPI.DTOS;
 using EcoLudicoAPI.Enums;
 using EcoLudicoAPI.MappingProfiles;
@@ -212,32 +213,55 @@ namespace EcoLudicoAPI.Controllers
         public async Task<IActionResult> GetFavoriteProjects(int id)
         {
             var user = await _uof.UserRepository.GetByIdWithFavoriteProjectsAsync(id);
-            if (user == null) return NotFound("Usuário não encontrado.");
+            if (user == null)
+            {
+                return NotFound("Usuário não encontrado.");
+            }
 
-            var favoriteProjects = user.FavoriteProjects
+            if (user.FavoriteProjects == null || !user.FavoriteProjects.Any())
+            {
+                return Ok(new List<FavoriteProjectResponseDTO>()); 
+            }
+
+            var favoriteProjectsDTO = user.FavoriteProjects
+                .Where(fp => fp.Projeto != null) 
                 .Select(fp => new FavoriteProjectResponseDTO
                 {
                     ProjectId = fp.Projeto.ProjectId,
                     Name = fp.Projeto.Name,
                     Description = fp.Projeto.Description,
-                    ImageUrls = fp.Projeto.ImageUrls.Select(img => img.Url).ToList(),
-                    AgeRange = fp.Projeto.AgeRange.ToString()
-                }).ToList();
+                    ImageUrls = fp.Projeto.ImageUrls != null ? fp.Projeto.ImageUrls.Select(img => img.Url).ToList() : new List<string>(),
+                    AgeRange = fp.Projeto.AgeRange.ToString() 
+                })
+                .ToList();
 
-            return Ok(favoriteProjects);
+            return Ok(favoriteProjectsDTO);
         }
 
         [HttpPost("{id}/favorite-projects/{idProject}")]
         public async Task<IActionResult> AddFavoriteProjects(int id, int idProject)
         {
-            var user = await _uof.UserRepository.GetByIdAsync(id);
-            if (user == null) return NotFound("Usuário não encontrado");
+            var user = await _uof.UserRepository.GetByIdWithFavoriteProjectsAsync(id); 
+            if (user == null)
+            {
+                return NotFound("Usuário não encontrado.");
+            }
 
             var project = await _uof.ProjectRepository.GetByIdAsync(idProject);
-            if (project == null) return NotFound("Projeto não encontrado");
+            if (project == null)
+            {
+                return NotFound("Projeto não encontrado.");
+            }
 
-            if (user.FavoriteProjects.Any(fp => fp.ProjectId == idProject))
-                return BadRequest("Projeto já está nos favoritos");
+            if (user.FavoriteProjects != null && user.FavoriteProjects.Any(fp => fp.ProjectId == idProject))
+            {
+                return Conflict("Projeto já está nos favoritos."); 
+            }
+
+            if (user.FavoriteProjects == null)
+            {
+                user.FavoriteProjects = new List<FavoriteProject>();
+            }
 
             user.FavoriteProjects.Add(new FavoriteProject
             {
@@ -248,20 +272,30 @@ namespace EcoLudicoAPI.Controllers
             _uof.UserRepository.Update(user);
             await _uof.CommitAsync();
 
-            return NoContent();
+            return NoContent(); 
         }
 
         [HttpDelete("{id}/favorite-projects/{projectId}")]
         public async Task<IActionResult> RemoveFavoriteProject(int id, int projectId)
         {
             var user = await _uof.UserRepository.GetByIdWithFavoriteProjectsAsync(id);
-            if (user == null) return NotFound("Usuário não encontrado.");
+            if (user == null)
+            {
+                return NotFound("Usuário não encontrado.");
+            }
+
+            if (user.FavoriteProjects == null)
+            {
+                return NotFound("Projeto não está na lista de favoritos do usuário."); 
+            }
 
             var favoriteProjectToRemove = user.FavoriteProjects
                 .FirstOrDefault(fp => fp.ProjectId == projectId);
 
             if (favoriteProjectToRemove == null)
+            {
                 return NotFound("Projeto não está na lista de favoritos do usuário.");
+            }
 
             user.FavoriteProjects.Remove(favoriteProjectToRemove);
 
@@ -276,73 +310,134 @@ namespace EcoLudicoAPI.Controllers
         [HttpGet("{id}/comments")]
         public async Task<IActionResult> GetUserComments(int id)
         {
-            var user = await _uof.UserRepository.GetByIdAsync(id);
+            var user = await _uof.UserRepository.GetByIdAsync(id); 
             if (user == null)
                 return NotFound("Usuário não encontrado.");
 
             var comments = user.MadeComments;
 
-            var commentDtos = comments.Select(c => new CommentResponseDTO
-            {
-                CommentId = c.CommentId,
-                Content = c.Content,
-                CreationDate = c.CreationDate,
-                UserName = c.User.Name 
-            }).ToList();
+            // Usando AutoMapper aqui para ser consistente
+            var commentDtos = _mapper.Map<List<CommentResponseDTO>>(comments);
 
             return Ok(commentDtos);
         }
 
-        [HttpPost("{id}/comments/{projectId}")]
-        public async Task<IActionResult> AddCommentToAProject(int id, int projectId, [FromBody] CommentDTO commentDTO)
+        [HttpPost("{id}/comments/{projectId}")] 
+        public async Task<IActionResult> AddCommentToAProject(int id, int projectId, [FromBody] CommentCreateDTO commentDto)
         {
-            var user = await _uof.UserRepository.GetByIdAsync(id);
+            var user = await _uof.UserRepository.GetByIdAsync(id); 
             if (user == null)
-                return NotFound("Usuário não encontrado.");
-
-            var project = await _uof.ProjectRepository.GetByIdAsync(projectId);
-            if (project == null)
-                return NotFound("Projeto não encontrado.");
-
-            var comment = new Comment
             {
-                Content = commentDTO.Content,
-                UserId = user.UserId,
-                ProjectId = project.ProjectId
-            };
+                return NotFound("Usuário não encontrado.");
+            }
 
-            project.Comments.Add(comment);
+            var project = await _uof.ProjectRepository.GetByIdAsync(projectId); 
+            if (project == null)
+            {
+                return NotFound("Projeto não encontrado.");
+            }
 
-            _uof.ProjectRepository.Update(project);
+            int? projectOwnerUserId = null;
+            if (project.School != null && project.School.Teachers != null && project.School.Teachers.Any())
+            {
+                projectOwnerUserId = project.School.Teachers
+                                        .FirstOrDefault(t => t.Type == UserType.Professor)?.UserId;
+            }
+
+            if (projectOwnerUserId == id) 
+            {
+                return Forbid("O dono do projeto não pode fazer comentários no próprio projeto.");
+            }
+
+            var comment = _mapper.Map<Comment>(commentDto); 
+            comment.UserId = id; 
+            comment.ProjectId = projectId; 
+            comment.CreationDate = DateTime.UtcNow; 
+
+            _uof.CommentRepository.Create(comment);
             await _uof.CommitAsync();
 
-            var response = new CommentResponseDTO
+            var createdCommentWithUser = await _uof.CommentRepository.GetByIdAsync(comment.CommentId);
+            if (createdCommentWithUser == null)
             {
-                CommentId = comment.CommentId,
-                Content = comment.Content,
-                CreationDate = comment.CreationDate,
-                UserName = user.Name
-            };
+                return StatusCode(500, "Erro ao recuperar o comentário recém-criado.");
+            }
 
-            return Ok(response);
+            var responseDto = _mapper.Map<CommentResponseDTO>(createdCommentWithUser);
+
+            return Ok(responseDto); 
         }
 
-        [HttpDelete("{id}/comments/{commentId}")]
-        public async Task<IActionResult> DeleteComment(int id, int commentId)
+        [HttpPut("{id}/comments/{commentId}")] 
+        public async Task<IActionResult> UpdateComment(int id, int commentId, [FromBody] CommentUpdateDTO commentDto)
         {
+            if (commentId != commentDto.CommentId)
+            {
+                return BadRequest("ID do comentário na URL não corresponde ao ID no corpo da requisição.");
+            }
+
             var user = await _uof.UserRepository.GetByIdAsync(id);
-            if (user == null) return NotFound("Usuário não encontrado.");
+            if (user == null)
+            {
+                return NotFound("Usuário não encontrado.");
+            }
 
-            var comment = await _uof.CommentRepository.GetByIdAsync(commentId);
-            if (comment == null) return NotFound("Comentário não encontrado.");
+            var commentToUpdate = await _uof.CommentRepository.GetByIdAsync(commentId);
+            if (commentToUpdate == null)
+            {
+                return NotFound("Comentário não encontrado.");
+            }
 
-            if (comment.UserId != user.UserId)
-                return Unauthorized("Você não pode excluir esse comentário.");
+            if (commentToUpdate.UserId != id)
+            {
+                return Forbid("Você não tem permissão para editar este comentário.");
+            }
 
-            _uof.CommentRepository.Delete(comment);
+            _mapper.Map(commentDto, commentToUpdate);
+
+            _uof.CommentRepository.Update(commentToUpdate);
             await _uof.CommitAsync();
 
             return NoContent();
+        }
+
+        [HttpDelete("{id}/comments/{commentId}")] 
+        public async Task<IActionResult> DeleteComment(int id, int commentId)
+        {
+            var user = await _uof.UserRepository.GetByIdAsync(id);
+            if (user == null)
+            {
+                return NotFound("Usuário não encontrado.");
+            }
+
+            var commentToDelete = await _uof.CommentRepository.GetCommentByIdWithProjectAndSchoolInfoAsync(commentId);
+            if (commentToDelete == null)
+            {
+                return NotFound("Comentário não encontrado.");
+            }
+
+            if (commentToDelete.Project == null)
+            {
+                return StatusCode(500, "Projeto associado ao comentário não encontrado.");
+            }
+
+            int? projectOwnerUserId = null;
+            if (commentToDelete.Project.School != null && commentToDelete.Project.School.Teachers != null && commentToDelete.Project.School.Teachers.Any())
+            {
+                projectOwnerUserId = commentToDelete.Project.School.Teachers
+                                        .FirstOrDefault(t => t.Type == UserType.Professor)?.UserId;
+            }
+
+            if (projectOwnerUserId == id || commentToDelete.UserId == id)
+            {
+                _uof.CommentRepository.Delete(commentToDelete);
+                await _uof.CommitAsync();
+                return NoContent();
+            }
+            else
+            {
+                return Forbid("Você não tem permissão para excluir este comentário.");
+            }
         }
     }
 }

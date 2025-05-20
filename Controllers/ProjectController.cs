@@ -33,36 +33,59 @@ namespace EcoLudicoAPI.Controllers
             return Ok(projectDTO);
         }
 
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<ProjectDTO>> GetProjectById(int id)
+        //{
+        //    var project = await _uof.ProjectRepository.GetByIdAsync(id);
+        //    if (project == null)
+        //        return NotFound("Projeto não encontrado.");
+
+        //    var projectDTO = _mapper.Map<ProjectDTO>(project);
+        //    return Ok(projectDTO);
+        //}
+
         [HttpGet("{id}")]
         public async Task<ActionResult<ProjectDTO>> GetProjectById(int id)
         {
             var project = await _uof.ProjectRepository.GetByIdAsync(id);
             if (project == null)
+            {
                 return NotFound("Projeto não encontrado.");
+            }
 
             var projectDTO = _mapper.Map<ProjectDTO>(project);
+
+            if (project.School != null && project.School.Teachers.Any())
+            {
+                projectDTO.SchoolOwnerUserId = project.School.Teachers
+                                                .FirstOrDefault(t => t.Type == UserType.Professor)?.UserId;
+            }
+            else
+            {
+                projectDTO.SchoolOwnerUserId = null; 
+            }
+
+            if (project.Comments != null && project.Comments.Any())
+            {
+                projectDTO.Comments = _mapper.Map<List<CommentResponseDTO>>(project.Comments);
+            }
+            else
+            {
+                projectDTO.Comments = new List<CommentResponseDTO>(); 
+            }
+
+            // 4. Mapear e preencher a School para SchoolDTO (já configurado no ProjectProfile)
+            // Se você adicionou o .ForMember(dest => dest.School, opt => opt.MapFrom(src => src.School))
+            // no ProjectProfile, esta linha já deve ser preenchida. Se não, você pode forçar aqui:
+            // if (project.School != null)
+            // {
+            //    projectDTO.School = _mapper.Map<SchoolDTO>(project.School);
+            // }
+
+
             return Ok(projectDTO);
         }
 
-        //[HttpGet("user/projects")]
-        //public async Task<IActionResult> GetProjectsByUserId([FromQuery] int userId)
-        //{
-        //    var user = await _uof.UserRepository.GetByIdAsync(userId);
-        //    if (user == null)
-        //        return NotFound("Usuário não encontrado.");
-
-        //    if (user.Type != UserType.Professor) 
-        //        return BadRequest("Somente professores possuem projetos.");
-
-        //    var projects = await _uof.ProjectRepository
-        //        .GetAllAsync(p => p.SchoolId == user.SchoolId);
-
-        //    if (projects == null || !projects.Any())
-        //        return NotFound("Nenhum projeto cadastrado para esta escola.");
-
-        //    var projectDtos = _mapper.Map<IEnumerable<ProjectDTO>>(projects);
-        //    return Ok(projectDtos);
-        //}
 
         [HttpGet("user/projects")]
         public async Task<IActionResult> GetProjectsByUserId(int userId)
@@ -123,12 +146,15 @@ namespace EcoLudicoAPI.Controllers
             if (project.SchoolId != user.SchoolId)
                 return Forbid("Este projeto não pertence à sua escola.");
 
-            _mapper.Map(projectUpdateDTO, project);
+            _mapper.Map(projectUpdateDTO, project); 
 
             _uof.ProjectRepository.Update(project);
             await _uof.CommitAsync();
 
             var updatedProjectDTO = _mapper.Map<ProjectDTO>(project);
+
+            updatedProjectDTO.SchoolOwnerUserId = userId; 
+                                                         
             return Ok(updatedProjectDTO);
         }
 

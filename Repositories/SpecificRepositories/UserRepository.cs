@@ -56,12 +56,21 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
                 .FirstOrDefaultAsync(u => u.UserId == id);
         }
 
-        public async Task<User> GetByIdWithFavoriteProjectsAsync(int id)
+        public async Task<User?> GetByIdWithFavoriteProjectsAsync(int id)
         {
             return await _context.Users
-                .Include(u => u.FavoriteProjects)
-                    .ThenInclude(fp => fp.Projeto)
-                .FirstOrDefaultAsync(u => u.UserId == id);
+                            .Include(u => u.FavoriteProjects)
+                                .ThenInclude(fp => fp.Projeto)
+                                    .ThenInclude(p => p.ImageUrls)
+                            .Include(u => u.FavoriteProjects) 
+                                .ThenInclude(fp => fp.Projeto)
+                                    .ThenInclude(p => p.School) 
+                                        .ThenInclude(s => s.Address) 
+                            .Include(u => u.FavoriteProjects)
+                                .ThenInclude(fp => fp.Projeto)
+                                    .ThenInclude(p => p.Comments) 
+                                        .ThenInclude(c => c.User) 
+                            .FirstOrDefaultAsync(u => u.UserId == id);
         }
 
         public async Task<IEnumerable<User>> GetAllUsersWithDetailsAsync()
