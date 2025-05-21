@@ -310,49 +310,36 @@ namespace EcoLudicoAPI.Controllers
         [HttpGet("{id}/comments")]
         public async Task<IActionResult> GetUserComments(int id)
         {
-            var user = await _uof.UserRepository.GetByIdAsync(id); 
+            var user = await _uof.UserRepository.GetByIdAsync(id);
             if (user == null)
                 return NotFound("Usuário não encontrado.");
 
-            var comments = user.MadeComments;
+            var comments = user.MadeComments; 
 
-            // Usando AutoMapper aqui para ser consistente
             var commentDtos = _mapper.Map<List<CommentResponseDTO>>(comments);
 
             return Ok(commentDtos);
         }
 
-        [HttpPost("{id}/comments/{projectId}")] 
+        [HttpPost("{id}/comments/{projectId}")]
         public async Task<IActionResult> AddCommentToAProject(int id, int projectId, [FromBody] CommentCreateDTO commentDto)
         {
-            var user = await _uof.UserRepository.GetByIdAsync(id); 
+            var user = await _uof.UserRepository.GetByIdAsync(id);
             if (user == null)
             {
                 return NotFound("Usuário não encontrado.");
             }
 
-            var project = await _uof.ProjectRepository.GetByIdAsync(projectId); 
+            var project = await _uof.ProjectRepository.GetByIdAsync(projectId);
             if (project == null)
             {
                 return NotFound("Projeto não encontrado.");
             }
 
-            int? projectOwnerUserId = null;
-            if (project.School != null && project.School.Teachers != null && project.School.Teachers.Any())
-            {
-                projectOwnerUserId = project.School.Teachers
-                                        .FirstOrDefault(t => t.Type == UserType.Professor)?.UserId;
-            }
-
-            if (projectOwnerUserId == id) 
-            {
-                return Forbid("O dono do projeto não pode fazer comentários no próprio projeto.");
-            }
-
-            var comment = _mapper.Map<Comment>(commentDto); 
-            comment.UserId = id; 
-            comment.ProjectId = projectId; 
-            comment.CreationDate = DateTime.UtcNow; 
+            var comment = _mapper.Map<Comment>(commentDto);
+            comment.UserId = id;
+            comment.ProjectId = projectId;
+            comment.CreationDate = DateTime.UtcNow;
 
             _uof.CommentRepository.Create(comment);
             await _uof.CommitAsync();
@@ -360,15 +347,15 @@ namespace EcoLudicoAPI.Controllers
             var createdCommentWithUser = await _uof.CommentRepository.GetByIdAsync(comment.CommentId);
             if (createdCommentWithUser == null)
             {
-                return StatusCode(500, "Erro ao recuperar o comentário recém-criado.");
+                return StatusCode(500, "Erro ao recuperar o comentário recém-criado. Tente buscar o projeto novamente para ver o comentário.");
             }
 
             var responseDto = _mapper.Map<CommentResponseDTO>(createdCommentWithUser);
 
-            return Ok(responseDto); 
+            return Ok(responseDto);
         }
 
-        [HttpPut("{id}/comments/{commentId}")] 
+        [HttpPut("{id}/comments/{commentId}")]
         public async Task<IActionResult> UpdateComment(int id, int commentId, [FromBody] CommentUpdateDTO commentDto)
         {
             if (commentId != commentDto.CommentId)
@@ -376,10 +363,10 @@ namespace EcoLudicoAPI.Controllers
                 return BadRequest("ID do comentário na URL não corresponde ao ID no corpo da requisição.");
             }
 
-            var user = await _uof.UserRepository.GetByIdAsync(id);
+            var user = await _uof.UserRepository.GetByIdAsync(id); 
             if (user == null)
             {
-                return NotFound("Usuário não encontrado.");
+                return NotFound("Usuário que tenta editar não encontrado.");
             }
 
             var commentToUpdate = await _uof.CommentRepository.GetByIdAsync(commentId);
@@ -390,24 +377,23 @@ namespace EcoLudicoAPI.Controllers
 
             if (commentToUpdate.UserId != id)
             {
-                return Forbid("Você não tem permissão para editar este comentário.");
+                return Forbid("Você não tem permissão para editar este comentário. Somente o autor do comentário pode editá-lo.");
             }
 
-            _mapper.Map(commentDto, commentToUpdate);
-
+            _mapper.Map(commentDto, commentToUpdate); 
             _uof.CommentRepository.Update(commentToUpdate);
             await _uof.CommitAsync();
 
             return NoContent();
         }
 
-        [HttpDelete("{id}/comments/{commentId}")] 
+        [HttpDelete("{id}/comments/{commentId}")]
         public async Task<IActionResult> DeleteComment(int id, int commentId)
         {
             var user = await _uof.UserRepository.GetByIdAsync(id);
             if (user == null)
             {
-                return NotFound("Usuário não encontrado.");
+                return NotFound("Usuário que tenta excluir não encontrado.");
             }
 
             var commentToDelete = await _uof.CommentRepository.GetCommentByIdWithProjectAndSchoolInfoAsync(commentId);
@@ -418,17 +404,17 @@ namespace EcoLudicoAPI.Controllers
 
             if (commentToDelete.Project == null)
             {
-                return StatusCode(500, "Projeto associado ao comentário não encontrado.");
+                return StatusCode(500, "Erro interno: Projeto associado ao comentário não foi carregado. Verifique o método GetCommentByIdWithProjectAndSchoolInfoAsync.");
             }
 
             int? projectOwnerUserId = null;
             if (commentToDelete.Project.School != null && commentToDelete.Project.School.Teachers != null && commentToDelete.Project.School.Teachers.Any())
             {
                 projectOwnerUserId = commentToDelete.Project.School.Teachers
-                                        .FirstOrDefault(t => t.Type == UserType.Professor)?.UserId;
+                                            .FirstOrDefault(t => t.Type == UserType.Professor)?.UserId;
             }
 
-            if (projectOwnerUserId == id || commentToDelete.UserId == id)
+            if (commentToDelete.UserId == id || projectOwnerUserId == id)
             {
                 _uof.CommentRepository.Delete(commentToDelete);
                 await _uof.CommitAsync();
@@ -436,7 +422,7 @@ namespace EcoLudicoAPI.Controllers
             }
             else
             {
-                return Forbid("Você não tem permissão para excluir este comentário.");
+                return Forbid("Você não tem permissão para excluir este comentário. Somente o autor do comentário ou o dono do projeto podem excluí-lo.");
             }
         }
     }

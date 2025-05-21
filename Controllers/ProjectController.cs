@@ -74,15 +74,6 @@ namespace EcoLudicoAPI.Controllers
                 projectDTO.Comments = new List<CommentResponseDTO>(); 
             }
 
-            // 4. Mapear e preencher a School para SchoolDTO (já configurado no ProjectProfile)
-            // Se você adicionou o .ForMember(dest => dest.School, opt => opt.MapFrom(src => src.School))
-            // no ProjectProfile, esta linha já deve ser preenchida. Se não, você pode forçar aqui:
-            // if (project.School != null)
-            // {
-            //    projectDTO.School = _mapper.Map<SchoolDTO>(project.School);
-            // }
-
-
             return Ok(projectDTO);
         }
 
