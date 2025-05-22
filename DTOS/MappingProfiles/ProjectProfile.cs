@@ -35,6 +35,10 @@ namespace EcoLudicoAPI.MappingProfiles
                     (AgeRange)src.AgeRange
                 ));
 
+            CreateMap<ProjectCreateWithImageDTO, Project>()
+                .ForMember(dest => dest.ImageUrls, opt => opt.Ignore())
+                .ForMember(dest => dest.School, opt => opt.Ignore());
+
             CreateMap<CommentCreateDTO, Comment>();
 
             CreateMap<CommentUpdateDTO, Comment>();

@@ -9,7 +9,8 @@ namespace EcoLudicoAPI.DTOS
         public string Name { get; set; } = String.Empty;
         public string Email { get; set; } = String.Empty;
         public DateOnly DateBirth { get; set; }
-        public AddressDTO Address { get; set; } 
+        public AddressDTO Address { get; set; }
+        public string? ProfilePicture { get; set; }
         public int? SchoolId { get; set; }
         public SchoolDTO? School { get; set; }
         public List<SchoolDTO>? FavoriteSchools { get; set; }

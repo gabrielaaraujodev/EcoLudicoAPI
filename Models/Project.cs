@@ -15,7 +15,7 @@ namespace EcoLudicoAPI.Models
         public string? Description { get; set; }
         public string? Tutorial { get; set; }
         [Required]
-        public List<ImageUrl> ImageUrls { get; set; } = new();
+        public List<ImageUrl> ImageUrls { get; set; } = new List<ImageUrl>();
         public AgeRange AgeRange { get; set; }
         public string? MaterialsList { get; set; }
 

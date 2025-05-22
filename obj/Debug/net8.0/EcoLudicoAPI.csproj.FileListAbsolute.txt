@@ -114,4 +114,5 @@ C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\n
 C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\EcoLudicoAPI.pdb
 C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\EcoLudicoAPI.genruntimeconfig.cache
 C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\ref\EcoLudicoAPI.dll
+C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\EcoLudicoAPI.staticwebassets.runtime.json
 C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

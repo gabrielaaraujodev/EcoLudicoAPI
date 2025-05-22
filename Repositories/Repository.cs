@@ -29,7 +29,6 @@ namespace EcoLudicoAPI.Repositories
             return await _context.Set<T>().FirstOrDefaultAsync(predicate);
         }
 
-        // Não irei utilizar mais o "SaveChanges()" diretamente aqui, pois quem estará encarregado seria o 'UoW'.
         public T Create(T entity)
         {
             _context.Set<T>().Add(entity);

@@ -24,6 +24,7 @@ namespace EcoLudicoAPI.Models
         public string Password { get; set; } = string.Empty;
 
         public Address Address { get; set; }
+        public string? ProfilePicture { get; set; }
 
         [ForeignKey("School")]
         public int? SchoolId { get; set; }

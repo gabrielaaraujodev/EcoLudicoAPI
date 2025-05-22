@@ -5,6 +5,7 @@ using EcoLudicoAPI.Enums;
 using EcoLudicoAPI.MappingProfiles;
 using EcoLudicoAPI.Models;
 using EcoLudicoAPI.Repositories.UnitOfWork;
+using EcoLudicoAPI.Swagger;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,11 +17,13 @@ namespace EcoLudicoAPI.Controllers
     {
         private IUnitOfWork _uof;
         private readonly IMapper _mapper;
+        private readonly IWebHostEnvironment _env;
 
-        public UserController(IUnitOfWork uof, IMapper mapper)
+        public UserController(IUnitOfWork uof, IMapper mapper, IWebHostEnvironment env)
         {
             _uof = uof;
             _mapper = mapper;
+            _env = env;
         }
 
         [HttpPost("register")]
@@ -85,6 +88,64 @@ namespace EcoLudicoAPI.Controllers
             var userDTO = _mapper.Map<UserDTO>(verifyUser);
 
             return Ok(userDTO);
+        }
+        // ---------------------------------------------------------------------------------------------------------------
+        [HttpPost("{id}/upload-profile-picture")]
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> UploadProfilePicture(int id, [FromForm] UploadProfilePictureRequest request)
+        {
+            var file = request.File;
+
+            if (file == null || file.Length == 0)
+            {
+                return BadRequest("Nenhum arquivo foi enviado.");
+            }
+
+            if (!file.ContentType.StartsWith("image/"))
+            {
+                return BadRequest("Tipo de arquivo inválido. Apenas imagens são permitidas.");
+            }
+
+            const long maxFileSize = 5 * 1024 * 1024; 
+            if (file.Length > maxFileSize)
+            {
+                return BadRequest("O arquivo é muito grande. Tamanho máximo permitido é 5MB.");
+            }
+
+            var user = await _uof.UserRepository.GetByIdAsync(id);
+            if (user == null)
+            {
+                return NotFound($"O usuário de id = {id} não existe.");
+            }
+
+            var uploadsFolder = Path.Combine(_env.WebRootPath, "ProfilePictures");
+            if (!Directory.Exists(uploadsFolder))
+            {
+                Directory.CreateDirectory(uploadsFolder);
+            }
+
+            var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+            try
+            {
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao salvar o arquivo: {ex.Message}");
+                return StatusCode(500, "Erro interno ao salvar a imagem.");
+            }
+
+            user.ProfilePicture = $"/ProfilePictures/{uniqueFileName}"; 
+
+            _uof.UserRepository.Update(user); 
+            await _uof.CommitAsync();
+
+            return Ok(new { profilePictureUrl = user.ProfilePicture });
         }
 
         // ---------------------------------------------------------------------------------------------------------------
