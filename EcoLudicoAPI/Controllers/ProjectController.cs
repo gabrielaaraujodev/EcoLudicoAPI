@@ -156,7 +156,7 @@ namespace EcoLudicoAPI.Controllers
 
                 var relativePath = $"/ProjectPictures/{uniqueFileName}";
                 var project = _mapper.Map<Project>(dto);
-                project.ImageUrls.Add(new ImageUrl { Url = relativePath.TrimStart('/') });
+                project.ImageUrls.Add(new ImageUrl { Url = relativePath });
                 project.SchoolId = user.SchoolId.Value;
 
                 _uof.ProjectRepository.Create(project);
