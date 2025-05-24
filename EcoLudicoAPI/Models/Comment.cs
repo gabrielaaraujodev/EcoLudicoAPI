@@ -9,7 +9,7 @@ namespace EcoLudicoAPI.Models
         public int CommentId { get; set; }
 
         [Required, MaxLength(500)]
-        public string Content { get; set; }
+        public string Content { get; set; } = string.Empty;
 
         public DateTime CreationDate { get; set; } = DateTime.UtcNow;
 

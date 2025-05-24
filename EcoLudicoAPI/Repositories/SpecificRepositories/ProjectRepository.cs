@@ -23,8 +23,32 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
                 query = query.Where(p => p.AgeRange == ageRange.Value);
             }
 
+            query = query.Include(p => p.Comments);
+
             return await query.ToListAsync();
         }
+
+
+        public async Task<Project> GetByIdAsync(int projectId)
+        {
+            return await _context.Projects
+                .Include(p => p.ImageUrls) 
+                .Include(p => p.Comments)  
+                    .ThenInclude(c => c.User) 
+                .Include(p => p.School)     
+                    .ThenInclude(s => s.Teachers) 
+                .FirstOrDefaultAsync(p => p.ProjectId == projectId);
+        }
+
+        public async Task<IEnumerable<Project>> GetProjectsBySchoolIdAsync(int schoolId)
+        {
+            return await _context.Projects
+                .Include(p => p.ImageUrls)
+                .Where(p => p.SchoolId == schoolId)
+                .ToListAsync();
+        }
+
+
     }
 
 }

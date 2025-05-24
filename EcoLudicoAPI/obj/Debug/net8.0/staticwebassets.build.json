@@ -1,0 +1,2803 @@
+{
+  "Version": 1,
+  "Hash": "nA1DqVrYiY7BNC2k/j3wjzrdS/0xDrqtpG4RaP+0zJw=",
+  "Source": "EcoLudicoAPI",
+  "BasePath": "_content/EcoLudicoAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EcoLudicoAPI\\wwwroot",
+      "Source": "EcoLudicoAPI",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProfilePictures\\16fe515f-8405-48eb-8afe-c68b077ca3a9.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProfilePictures/16fe515f-8405-48eb-8afe-c68b077ca3a9#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePictures\\16fe515f-8405-48eb-8afe-c68b077ca3a9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\064507f0-b20a-4fdb-9634-086081a09bc9.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/064507f0-b20a-4fdb-9634-086081a09bc9#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\064507f0-b20a-4fdb-9634-086081a09bc9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\0c71574f-fcc4-472d-a1d3-410369f032e8.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/0c71574f-fcc4-472d-a1d3-410369f032e8#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\0c71574f-fcc4-472d-a1d3-410369f032e8.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\19fc18eb-0795-4116-a5a1-a2205b8f478e.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/19fc18eb-0795-4116-a5a1-a2205b8f478e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\19fc18eb-0795-4116-a5a1-a2205b8f478e.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\212319d7-9abd-401c-af3a-520fa400cd7f.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/212319d7-9abd-401c-af3a-520fa400cd7f#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\212319d7-9abd-401c-af3a-520fa400cd7f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\217135d7-cb2f-4bb8-9f93-71e4bdab967e.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/217135d7-cb2f-4bb8-9f93-71e4bdab967e#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\217135d7-cb2f-4bb8-9f93-71e4bdab967e.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\28baf559-2c20-4119-8a9b-82e0409c9db7.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/28baf559-2c20-4119-8a9b-82e0409c9db7#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\28baf559-2c20-4119-8a9b-82e0409c9db7.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\304c5bbb-af3d-4873-89f2-abb936b736e7.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/304c5bbb-af3d-4873-89f2-abb936b736e7#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\304c5bbb-af3d-4873-89f2-abb936b736e7.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\572cd991-abb0-40c6-88f5-968850225091.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/572cd991-abb0-40c6-88f5-968850225091#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\572cd991-abb0-40c6-88f5-968850225091.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\75fde28e-e2a5-454a-b1d3-a0efaf6f8277.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/75fde28e-e2a5-454a-b1d3-a0efaf6f8277#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\75fde28e-e2a5-454a-b1d3-a0efaf6f8277.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\8b5e0de9-5a8a-4d45-9b18-4eefa827d410.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/8b5e0de9-5a8a-4d45-9b18-4eefa827d410#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\8b5e0de9-5a8a-4d45-9b18-4eefa827d410.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\9311730d-1492-4518-8a5a-78fd44a68a95.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/9311730d-1492-4518-8a5a-78fd44a68a95#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\9311730d-1492-4518-8a5a-78fd44a68a95.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\93f62206-83cc-4d79-b6ec-c86ed66a07d7.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/93f62206-83cc-4d79-b6ec-c86ed66a07d7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\93f62206-83cc-4d79-b6ec-c86ed66a07d7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\add6c3ec-356a-4f4e-ac44-e4f7b4663fa1.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/add6c3ec-356a-4f4e-ac44-e4f7b4663fa1#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\add6c3ec-356a-4f4e-ac44-e4f7b4663fa1.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b240f975-3f42-40f1-a057-8a7453c906a3.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/b240f975-3f42-40f1-a057-8a7453c906a3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\b240f975-3f42-40f1-a057-8a7453c906a3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b5278821-c04a-4b8d-9eb8-21dd20620fe2.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/b5278821-c04a-4b8d-9eb8-21dd20620fe2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\b5278821-c04a-4b8d-9eb8-21dd20620fe2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b648561a-fad1-40d6-87b6-402b08a3a745.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/b648561a-fad1-40d6-87b6-402b08a3a745#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\b648561a-fad1-40d6-87b6-402b08a3a745.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\bca7d059-81b6-4aba-bb59-dddd016f287a.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/bca7d059-81b6-4aba-bb59-dddd016f287a#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\bca7d059-81b6-4aba-bb59-dddd016f287a.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c0d10ae8-3b1b-4866-bf73-8c114b49489c.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/c0d10ae8-3b1b-4866-bf73-8c114b49489c#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\c0d10ae8-3b1b-4866-bf73-8c114b49489c.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c42bcb6c-0854-4959-b801-c05e959e647a.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/c42bcb6c-0854-4959-b801-c05e959e647a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\c42bcb6c-0854-4959-b801-c05e959e647a.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c93fb448-6e72-4c2e-b952-e91c89624e38.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/c93fb448-6e72-4c2e-b952-e91c89624e38#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\c93fb448-6e72-4c2e-b952-e91c89624e38.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\d05faca6-ff42-48ca-96e1-c4f063155b6d.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/d05faca6-ff42-48ca-96e1-c4f063155b6d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\d05faca6-ff42-48ca-96e1-c4f063155b6d.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\d51f3333-cb36-4297-9fe3-6388307f1abb.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/d51f3333-cb36-4297-9fe3-6388307f1abb#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\d51f3333-cb36-4297-9fe3-6388307f1abb.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\e79e5b75-41d3-440b-a3d5-3d3b4481bab6.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/e79e5b75-41d3-440b-a3d5-3d3b4481bab6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\e79e5b75-41d3-440b-a3d5-3d3b4481bab6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\ef675e15-a849-469b-8fe4-3c98e05646d7.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/ef675e15-a849-469b-8fe4-3c98e05646d7#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\ef675e15-a849-469b-8fe4-3c98e05646d7.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\f6ef9023-ac82-4dfb-b76c-ac6c05cf674e.webp",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/f6ef9023-ac82-4dfb-b76c-ac6c05cf674e#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wle2wn7556",
+      "Integrity": "dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\f6ef9023-ac82-4dfb-b76c-ac6c05cf674e.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\fab6eaf8-0fcf-43ee-8e54-508a0e24485d.jpg",
+      "SourceId": "EcoLudicoAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\",
+      "BasePath": "_content/EcoLudicoAPI",
+      "RelativePath": "ProjectPictures/fab6eaf8-0fcf-43ee-8e54-508a0e24485d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ta4u7kl2hw",
+      "Integrity": "u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProjectPictures\\fab6eaf8-0fcf-43ee-8e54-508a0e24485d.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "ProfilePictures/16fe515f-8405-48eb-8afe-c68b077ca3a9.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProfilePictures\\16fe515f-8405-48eb-8afe-c68b077ca3a9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 15:23:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePictures/16fe515f-8405-48eb-8afe-c68b077ca3a9.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProfilePictures\\16fe515f-8405-48eb-8afe-c68b077ca3a9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 15:23:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProfilePictures/16fe515f-8405-48eb-8afe-c68b077ca3a9.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/064507f0-b20a-4fdb-9634-086081a09bc9.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\064507f0-b20a-4fdb-9634-086081a09bc9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 17:58:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/064507f0-b20a-4fdb-9634-086081a09bc9.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\064507f0-b20a-4fdb-9634-086081a09bc9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 17:58:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/064507f0-b20a-4fdb-9634-086081a09bc9.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/0c71574f-fcc4-472d-a1d3-410369f032e8.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\0c71574f-fcc4-472d-a1d3-410369f032e8.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:27:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/0c71574f-fcc4-472d-a1d3-410369f032e8.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\0c71574f-fcc4-472d-a1d3-410369f032e8.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:27:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/0c71574f-fcc4-472d-a1d3-410369f032e8.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/19fc18eb-0795-4116-a5a1-a2205b8f478e.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\19fc18eb-0795-4116-a5a1-a2205b8f478e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/19fc18eb-0795-4116-a5a1-a2205b8f478e.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\19fc18eb-0795-4116-a5a1-a2205b8f478e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/19fc18eb-0795-4116-a5a1-a2205b8f478e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/212319d7-9abd-401c-af3a-520fa400cd7f.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\212319d7-9abd-401c-af3a-520fa400cd7f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:29:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/212319d7-9abd-401c-af3a-520fa400cd7f.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\212319d7-9abd-401c-af3a-520fa400cd7f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:29:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/212319d7-9abd-401c-af3a-520fa400cd7f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/217135d7-cb2f-4bb8-9f93-71e4bdab967e.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\217135d7-cb2f-4bb8-9f93-71e4bdab967e.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:55:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/217135d7-cb2f-4bb8-9f93-71e4bdab967e.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\217135d7-cb2f-4bb8-9f93-71e4bdab967e.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:55:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/217135d7-cb2f-4bb8-9f93-71e4bdab967e.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/28baf559-2c20-4119-8a9b-82e0409c9db7.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\28baf559-2c20-4119-8a9b-82e0409c9db7.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:38:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/28baf559-2c20-4119-8a9b-82e0409c9db7.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\28baf559-2c20-4119-8a9b-82e0409c9db7.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:38:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/28baf559-2c20-4119-8a9b-82e0409c9db7.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/304c5bbb-af3d-4873-89f2-abb936b736e7.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\304c5bbb-af3d-4873-89f2-abb936b736e7.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 18:05:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/304c5bbb-af3d-4873-89f2-abb936b736e7.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\304c5bbb-af3d-4873-89f2-abb936b736e7.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 18:05:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/304c5bbb-af3d-4873-89f2-abb936b736e7.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/572cd991-abb0-40c6-88f5-968850225091.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\572cd991-abb0-40c6-88f5-968850225091.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:00:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/572cd991-abb0-40c6-88f5-968850225091.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\572cd991-abb0-40c6-88f5-968850225091.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:00:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/572cd991-abb0-40c6-88f5-968850225091.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/75fde28e-e2a5-454a-b1d3-a0efaf6f8277.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\75fde28e-e2a5-454a-b1d3-a0efaf6f8277.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:43:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/75fde28e-e2a5-454a-b1d3-a0efaf6f8277.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\75fde28e-e2a5-454a-b1d3-a0efaf6f8277.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:43:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/75fde28e-e2a5-454a-b1d3-a0efaf6f8277.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/8b5e0de9-5a8a-4d45-9b18-4eefa827d410.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\8b5e0de9-5a8a-4d45-9b18-4eefa827d410.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:34:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/8b5e0de9-5a8a-4d45-9b18-4eefa827d410.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\8b5e0de9-5a8a-4d45-9b18-4eefa827d410.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:34:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/8b5e0de9-5a8a-4d45-9b18-4eefa827d410.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/9311730d-1492-4518-8a5a-78fd44a68a95.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\9311730d-1492-4518-8a5a-78fd44a68a95.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:11:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/9311730d-1492-4518-8a5a-78fd44a68a95.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\9311730d-1492-4518-8a5a-78fd44a68a95.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:11:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/9311730d-1492-4518-8a5a-78fd44a68a95.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/93f62206-83cc-4d79-b6ec-c86ed66a07d7.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\93f62206-83cc-4d79-b6ec-c86ed66a07d7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:57:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/93f62206-83cc-4d79-b6ec-c86ed66a07d7.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\93f62206-83cc-4d79-b6ec-c86ed66a07d7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:57:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/93f62206-83cc-4d79-b6ec-c86ed66a07d7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/add6c3ec-356a-4f4e-ac44-e4f7b4663fa1.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\add6c3ec-356a-4f4e-ac44-e4f7b4663fa1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 17:48:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/add6c3ec-356a-4f4e-ac44-e4f7b4663fa1.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\add6c3ec-356a-4f4e-ac44-e4f7b4663fa1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 17:48:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/add6c3ec-356a-4f4e-ac44-e4f7b4663fa1.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/b240f975-3f42-40f1-a057-8a7453c906a3.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b240f975-3f42-40f1-a057-8a7453c906a3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 13:59:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/b240f975-3f42-40f1-a057-8a7453c906a3.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b240f975-3f42-40f1-a057-8a7453c906a3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 13:59:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/b240f975-3f42-40f1-a057-8a7453c906a3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/b5278821-c04a-4b8d-9eb8-21dd20620fe2.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b5278821-c04a-4b8d-9eb8-21dd20620fe2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:29:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/b5278821-c04a-4b8d-9eb8-21dd20620fe2.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b5278821-c04a-4b8d-9eb8-21dd20620fe2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:29:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/b5278821-c04a-4b8d-9eb8-21dd20620fe2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/b648561a-fad1-40d6-87b6-402b08a3a745.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b648561a-fad1-40d6-87b6-402b08a3a745.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 17:38:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/b648561a-fad1-40d6-87b6-402b08a3a745.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b648561a-fad1-40d6-87b6-402b08a3a745.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 17:38:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/b648561a-fad1-40d6-87b6-402b08a3a745.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/bca7d059-81b6-4aba-bb59-dddd016f287a.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\bca7d059-81b6-4aba-bb59-dddd016f287a.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:35:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/bca7d059-81b6-4aba-bb59-dddd016f287a.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\bca7d059-81b6-4aba-bb59-dddd016f287a.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:35:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/bca7d059-81b6-4aba-bb59-dddd016f287a.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/c0d10ae8-3b1b-4866-bf73-8c114b49489c.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c0d10ae8-3b1b-4866-bf73-8c114b49489c.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:39:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/c0d10ae8-3b1b-4866-bf73-8c114b49489c.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c0d10ae8-3b1b-4866-bf73-8c114b49489c.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:39:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/c0d10ae8-3b1b-4866-bf73-8c114b49489c.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/c42bcb6c-0854-4959-b801-c05e959e647a.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c42bcb6c-0854-4959-b801-c05e959e647a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:38:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/c42bcb6c-0854-4959-b801-c05e959e647a.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c42bcb6c-0854-4959-b801-c05e959e647a.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:38:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/c42bcb6c-0854-4959-b801-c05e959e647a.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/c93fb448-6e72-4c2e-b952-e91c89624e38.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c93fb448-6e72-4c2e-b952-e91c89624e38.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:49:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/c93fb448-6e72-4c2e-b952-e91c89624e38.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c93fb448-6e72-4c2e-b952-e91c89624e38.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:49:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/c93fb448-6e72-4c2e-b952-e91c89624e38.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/d05faca6-ff42-48ca-96e1-c4f063155b6d.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\d05faca6-ff42-48ca-96e1-c4f063155b6d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:21:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/d05faca6-ff42-48ca-96e1-c4f063155b6d.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\d05faca6-ff42-48ca-96e1-c4f063155b6d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 14:21:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/d05faca6-ff42-48ca-96e1-c4f063155b6d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/d51f3333-cb36-4297-9fe3-6388307f1abb.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\d51f3333-cb36-4297-9fe3-6388307f1abb.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:32:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/d51f3333-cb36-4297-9fe3-6388307f1abb.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\d51f3333-cb36-4297-9fe3-6388307f1abb.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:32:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/d51f3333-cb36-4297-9fe3-6388307f1abb.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/e79e5b75-41d3-440b-a3d5-3d3b4481bab6.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\e79e5b75-41d3-440b-a3d5-3d3b4481bab6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/e79e5b75-41d3-440b-a3d5-3d3b4481bab6.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\e79e5b75-41d3-440b-a3d5-3d3b4481bab6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:51:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/e79e5b75-41d3-440b-a3d5-3d3b4481bab6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/ef675e15-a849-469b-8fe4-3c98e05646d7.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\ef675e15-a849-469b-8fe4-3c98e05646d7.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 20:05:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/ef675e15-a849-469b-8fe4-3c98e05646d7.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\ef675e15-a849-469b-8fe4-3c98e05646d7.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 22 May 2025 20:05:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/ef675e15-a849-469b-8fe4-3c98e05646d7.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/f6ef9023-ac82-4dfb-b76c-ac6c05cf674e.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\f6ef9023-ac82-4dfb-b76c-ac6c05cf674e.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:46:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/f6ef9023-ac82-4dfb-b76c-ac6c05cf674e.wle2wn7556.webp",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\f6ef9023-ac82-4dfb-b76c-ac6c05cf674e.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 15:46:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wle2wn7556"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/f6ef9023-ac82-4dfb-b76c-ac6c05cf674e.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dEIoyqeZM8w1FDICVf3AliFj6Y6fe7J0HP0WouoY6d0="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/fab6eaf8-0fcf-43ee-8e54-508a0e24485d.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\fab6eaf8-0fcf-43ee-8e54-508a0e24485d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 18:12:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    },
+    {
+      "Route": "ProjectPictures/fab6eaf8-0fcf-43ee-8e54-508a0e24485d.ta4u7kl2hw.jpg",
+      "AssetFile": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\fab6eaf8-0fcf-43ee-8e54-508a0e24485d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72901"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 23 May 2025 18:12:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ta4u7kl2hw"
+        },
+        {
+          "Name": "label",
+          "Value": "ProjectPictures/fab6eaf8-0fcf-43ee-8e54-508a0e24485d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u4eoygkbEOnwQ+vAk/HY+INcJpA+pspizfOZZbboEUc="
+        }
+      ]
+    }
+  ]
+}

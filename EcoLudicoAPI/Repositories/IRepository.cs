@@ -4,11 +4,11 @@ namespace EcoLudicoAPI.Repositories
 {
     public interface IRepository<T>
     {
-        Task<IEnumerable<T>> GetAllAsync();
+        Task<IEnumerable<T>> GetAllAsync(params Expression<Func<T, object>>[] includes);
         // " Expression<Func<T, bool>> predicate " -> Signfica que o método pode receber uma função ' lambda ' como parâmetro.
         Task<T?> GetAsync(Expression<Func<T, bool>> predicate);
         T Create(T entity);
         T Update(T entity);
-        void Delete(T entity);
+        T Delete(T entity);
     }
 }

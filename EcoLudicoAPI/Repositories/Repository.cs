@@ -12,25 +12,40 @@ namespace EcoLudicoAPI.Repositories
             _context = context;
         }
 
-        public Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IEnumerable<T>> GetAllAsync(params Expression<Func<T, object>>[] includes)
         {
-            throw new NotImplementedException();
+            IQueryable<T> query = _context.Set<T>().AsQueryable();
+
+            foreach (var include in includes)
+            {
+                query = query.Include(include);
+            }
+
+            return await query.ToListAsync();
         }
-        public Task<T?> GetAsync(Expression<Func<T, bool>> predicate)
+
+        public async Task<T?> GetAsync(Expression<Func<T, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return await _context.Set<T>().FirstOrDefaultAsync(predicate);
+        }
+
+        public T Create(T entity)
+        {
+            _context.Set<T>().Add(entity);
+            //_context.SaveChanges();
+            return entity;
         }
         public T Update(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Update(entity);
+            //_context.SaveChanges();
+            return entity;
         }
-        public T Create(T entity)
+        public T Delete(T entity)
         {
-            throw new NotImplementedException();
-        }
-        public void Delete(T entity)
-        {
-            throw new NotImplementedException();
+            _context.Set<T>().Remove(entity);
+            //_context.SaveChanges();
+            return entity;
         }     
     }
 }
