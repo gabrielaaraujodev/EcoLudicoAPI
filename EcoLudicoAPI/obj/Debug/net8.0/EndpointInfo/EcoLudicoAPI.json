@@ -1423,6 +1423,10 @@
         ],
         "type": "object",
         "properties": {
+          "schoolId": {
+            "type": "integer",
+            "format": "int32"
+          },
           "name": {
             "minLength": 1,
             "type": "string"
@@ -1436,6 +1440,11 @@
           },
           "operatingHours": {
             "type": "string",
+            "nullable": true
+          },
+          "ownerUserId": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           }
         },
@@ -1580,23 +1589,12 @@
       },
       "UserUpdateDTO": {
         "required": [
-          "email",
-          "name",
-          "password"
+          "name"
         ],
         "type": "object",
         "properties": {
           "name": {
             "maxLength": 100,
-            "minLength": 1,
-            "type": "string"
-          },
-          "email": {
-            "minLength": 1,
-            "type": "string",
-            "format": "email"
-          },
-          "password": {
             "minLength": 1,
             "type": "string"
           },

@@ -4,6 +4,8 @@ namespace EcoLudicoAPI.DTOS
 {
     public class SchoolDTO
     {
+        public int SchoolId { get; set; }
+
         [Required]
         public string Name { get; set; } = string.Empty;
 
@@ -13,5 +15,7 @@ namespace EcoLudicoAPI.DTOS
         public string Contact { get; set; } = string.Empty;
 
         public string OperatingHours { get; set; } = string.Empty;
+
+        public int? OwnerUserId { get; set; }
     }
 }

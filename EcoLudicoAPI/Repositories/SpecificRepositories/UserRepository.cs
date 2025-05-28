@@ -1,5 +1,6 @@
 ﻿using System.Linq.Expressions;
 using EcoLudicoAPI.Context;
+using EcoLudicoAPI.Enums;
 using EcoLudicoAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -82,6 +83,13 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
                 .Include(u => u.FavoriteProjects)
                 .Include(u => u.FavoriteSchools)
                 .Include(u => u.MadeComments)
+                .ToListAsync();
+        }
+
+        public async Task<List<User>> GetAllTeachersAsync()
+        {
+            return await _context.Users
+                .Where(u => u.Type == UserType.Professor)
                 .ToListAsync();
         }
 

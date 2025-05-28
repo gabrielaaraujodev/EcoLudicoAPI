@@ -11,7 +11,8 @@ namespace EcoLudicoAPI.MappingProfiles
             CreateMap<User, UserDTO>().ReverseMap();
             CreateMap<LoginRequestDTO, User>().ReverseMap();
             CreateMap<UserRegisterDTO, User>().ReverseMap();
-            CreateMap<UserUpdateDTO, User>().ReverseMap();
+            CreateMap<UserUpdateDTO, User>().ReverseMap()
+                .ForAllMembers(opt => opt.Condition((src, dest, srcMember) => srcMember != null));
         }
     }
 }

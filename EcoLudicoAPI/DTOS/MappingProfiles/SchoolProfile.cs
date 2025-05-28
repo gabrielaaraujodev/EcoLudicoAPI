@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using EcoLudicoAPI.DTOS;
+using EcoLudicoAPI.Enums;
 using EcoLudicoAPI.Models;
 
 namespace EcoLudicoAPI.MappingProfiles
@@ -8,10 +9,10 @@ namespace EcoLudicoAPI.MappingProfiles
     {
         public SchoolProfile()
         {
-            CreateMap<School, SchoolDTO>().ReverseMap();
+            CreateMap<School, SchoolDTO>();
             CreateMap<SchoolCreateDTO, School>().ReverseMap();
             CreateMap<SchoolUpdateDTO, School>()
-            .ForMember(dest => dest.Address, opt => opt.Ignore());
+                .ForMember(dest => dest.Address, opt => opt.Ignore());
             CreateMap<AddressDTO, Address>();
         }
     }

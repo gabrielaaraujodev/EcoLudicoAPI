@@ -24,8 +24,23 @@ namespace EcoLudicoAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<SchoolDTO>> GetAllSchools()
         {
-            var schools = await _uof.SchoolRepository.GetAllAsync();
-            var schoolsDTO = _mapper.Map<IEnumerable<SchoolDTO>>(schools);
+            var schools = await _uof.SchoolRepository.GetAllWithDetailsAsync();
+
+            var usersWithSchools = await _uof.UserRepository.GetAllAsync(); 
+            var userSchoolMap = usersWithSchools
+                .Where(u => u.SchoolId != null)
+                .ToDictionary(u => u.SchoolId.Value, u => u.UserId);
+
+            var schoolsDTO = schools.Select(school =>
+            {
+                var dto = _mapper.Map<SchoolDTO>(school);
+                if (userSchoolMap.TryGetValue(school.SchoolId, out int ownerId))
+                {
+                    dto.OwnerUserId = ownerId;
+                }
+                return dto;
+            });
+
             return Ok(schoolsDTO);
         }
 

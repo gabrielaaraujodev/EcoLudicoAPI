@@ -14,17 +14,13 @@ builder.Services.AddSwaggerGen(c =>
     c.OperationFilter<SwaggerFileOperationFilter>();
 });
 
-// ----------------------------------
 var mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
-//----------------------------------
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-//----------------------------------
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-//----------------------------------
 
 builder.Services.AddCors(options =>
 {
@@ -33,7 +29,6 @@ builder.Services.AddCors(options =>
                         .AllowAnyMethod() 
                         .AllowAnyHeader()); 
 });
-// ---------------------------------
 
 builder.Services.AddControllers().AddJsonOptions(options =>
 {

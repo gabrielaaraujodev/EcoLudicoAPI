@@ -22,8 +22,6 @@ namespace EcoLudicoAPI.Models
         [Required]
         public int SchoolId { get; set; }
         public School? School { get; set; }
-
-        // public List<FavoriteProject> Favoritos { get; set; } = new();
         public List<Comment> Comments { get; set; } = new();
     }
 }

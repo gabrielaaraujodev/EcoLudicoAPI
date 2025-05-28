@@ -142,3 +142,12 @@ C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\n
 C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\add6c3ec-356a-4f4e-ac44-e4f7b4663fa1.webp
 C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\b648561a-fad1-40d6-87b6-402b08a3a745.jpg
 C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\fab6eaf8-0fcf-43ee-8e54-508a0e24485d.jpg
+C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\372acecd-f119-40aa-becf-74d5e5bdd2a9.jpg
+C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\61543939-3dce-4d63-9b95-4eb1602e7bca.webp
+C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\e7462063-18b9-4690-9375-4d82b69b9e43.jpg
+C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\3e7a326c-95af-4059-92ce-4707c868b0da.jpg
+C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\b58d2c89-fbb7-421d-91c1-74013fb872fc.webp
+C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\63b0173c-cade-4af3-b145-1eca497420e4.webp
+C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\855cd3aa-c2a3-491a-8f42-ef451da1cff4.jpg
+C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\9e16f087-1426-4e07-b906-e87e3061dda5.webp
+C:\Users\Gabriel Araujo (Dev)\source\repos\EcoLudicoAPI\EcoLudicoAPI\bin\Debug\net8.0\wwwroot\ProjectPictures\c7d4a687-7165-441c-b848-db3ef8926a1d.webp

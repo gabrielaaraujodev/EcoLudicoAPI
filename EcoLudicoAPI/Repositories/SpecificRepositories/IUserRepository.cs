@@ -10,5 +10,7 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
         Task<User?> GetByIdWithFavoriteSchoolsAsync(int id);
         Task<User?> GetByIdWithFavoriteProjectsAsync(int id);
         Task<IEnumerable<User>> GetAllUsersWithDetailsAsync();
+
+        Task<List<User>> GetAllTeachersAsync();
     }
 }

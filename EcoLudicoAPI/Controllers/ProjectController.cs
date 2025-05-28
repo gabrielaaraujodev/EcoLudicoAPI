@@ -35,17 +35,6 @@ namespace EcoLudicoAPI.Controllers
             return Ok(projectDTO);
         }
 
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<ProjectDTO>> GetProjectById(int id)
-        //{
-        //    var project = await _uof.ProjectRepository.GetByIdAsync(id);
-        //    if (project == null)
-        //        return NotFound("Projeto não encontrado.");
-
-        //    var projectDTO = _mapper.Map<ProjectDTO>(project);
-        //    return Ok(projectDTO);
-        //}
-
         [HttpGet("{id}")]
         public async Task<ActionResult<ProjectDTO>> GetProjectById(int id)
         {

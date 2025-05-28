@@ -89,7 +89,30 @@ namespace EcoLudicoAPI.Controllers
 
             return Ok(userDTO);
         }
-        // ---------------------------------------------------------------------------------------------------------------
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<UserDTO>>> GetAll()
+        {
+            var users = await _uof.UserRepository.GetAllUsersWithDetailsAsync();
+
+            var userDTOs = _mapper.Map<IEnumerable<UserDTO>>(users);
+
+            return Ok(userDTOs);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<UserDTO>> GetById(int id)
+        {
+            var user = await _uof.UserRepository.GetByIdAsync(id);
+
+            if (user == null)
+                return NotFound($"Usuário com ID {id} não encontrado.");
+
+            var userDTO = _mapper.Map<UserDTO>(user);
+
+            return Ok(userDTO);
+        }
+
         [HttpPost("{id}/upload-profile-picture")]
         [Consumes("multipart/form-data")]
         public async Task<IActionResult> UploadProfilePicture(int id, [FromForm] UploadProfilePictureRequest request)
@@ -106,7 +129,7 @@ namespace EcoLudicoAPI.Controllers
                 return BadRequest("Tipo de arquivo inválido. Apenas imagens são permitidas.");
             }
 
-            const long maxFileSize = 5 * 1024 * 1024; 
+            const long maxFileSize = 5 * 1024 * 1024;
             if (file.Length > maxFileSize)
             {
                 return BadRequest("O arquivo é muito grande. Tamanho máximo permitido é 5MB.");
@@ -140,36 +163,12 @@ namespace EcoLudicoAPI.Controllers
                 return StatusCode(500, "Erro interno ao salvar a imagem.");
             }
 
-            user.ProfilePicture = $"/ProfilePictures/{uniqueFileName}"; 
+            user.ProfilePicture = $"/ProfilePictures/{uniqueFileName}";
 
-            _uof.UserRepository.Update(user); 
+            _uof.UserRepository.Update(user);
             await _uof.CommitAsync();
 
             return Ok(new { profilePictureUrl = user.ProfilePicture });
-        }
-
-        // ---------------------------------------------------------------------------------------------------------------
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<UserDTO>>> GetAll()
-        {
-            var users = await _uof.UserRepository.GetAllUsersWithDetailsAsync();
-
-            var userDTOs = _mapper.Map<IEnumerable<UserDTO>>(users);
-
-            return Ok(userDTOs);
-        }
-
-        [HttpGet("{id}")]
-        public async Task<ActionResult<UserDTO>> GetById(int id)
-        {
-            var user = await _uof.UserRepository.GetByIdAsync(id);
-
-            if (user == null)
-                return NotFound($"Usuário com ID {id} não encontrado.");
-
-            var userDTO = _mapper.Map<UserDTO>(user);
-
-            return Ok(userDTO);
         }
 
         [HttpPut("{id}")]
@@ -178,14 +177,19 @@ namespace EcoLudicoAPI.Controllers
             var user = await _uof.UserRepository.GetByIdAsync(id);
 
             if (user == null)
-                return NotFound($"O usuário de id = {id} não existe !");
+                return NotFound($"O usuário de id = {id} não existe!");
 
-            _mapper.Map(userUpdateDTO, user); 
+            user.Address ??= new Address();
+
+            _mapper.Map(userUpdateDTO, user);
+
             _uof.UserRepository.Update(user);
             await _uof.CommitAsync();
 
             return NoContent();
         }
+
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
@@ -201,8 +205,6 @@ namespace EcoLudicoAPI.Controllers
 
             return NoContent();
         }
-
-        // ---------------------------------------------------------------------------------------------------------------
 
         [HttpGet("{id}/favorite-schools")]
         public async Task<IActionResult> GetFavoriteSchools(int id)
@@ -267,8 +269,6 @@ namespace EcoLudicoAPI.Controllers
 
             return NoContent(); 
         }
-
-        // ---------------------------------------------------------------------------------------------------------------
 
         [HttpGet("{id}/favorite-projects")]
         public async Task<IActionResult> GetFavoriteProjects(int id)
@@ -365,8 +365,6 @@ namespace EcoLudicoAPI.Controllers
 
             return NoContent();
         }
-
-        // ---------------------------------------------------------------------------------------------------------------
 
         [HttpGet("{id}/comments")]
         public async Task<IActionResult> GetUserComments(int id)

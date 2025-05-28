@@ -12,7 +12,6 @@ namespace EcoLudicoAPI.Repositories.UnitOfWork
         IRepository<Comment> Comments { get; }
         IRepository<Address> Addresses { get; }
 
-        //----------------------------------
         IProjectRepository ProjectRepository { get; }
         IUserRepository UserRepository { get; }
         ISchoolRepository SchoolRepository { get; }

@@ -24,5 +24,12 @@ namespace EcoLudicoAPI.Repositories.SpecificRepositories
                 .FirstOrDefaultAsync(s => s.SchoolId == id);
         }
 
+        public async Task<IEnumerable<School>> GetAllWithDetailsAsync()
+        {
+            return await _context.Schools
+                .Include(s => s.Address) 
+                .ToListAsync();
+        }
+
     }
 }

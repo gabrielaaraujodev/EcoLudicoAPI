@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\ProfilePictures\\16fe515f-8405-48eb-8afe-c68b077ca3a9.jpg"
     },
     {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProfilePictures\\2c8b0b11-8fa8-4921-994f-a48b7656f8b7.jpg",
+      "PackagePath": "staticwebassets\\ProfilePictures\\2c8b0b11-8fa8-4921-994f-a48b7656f8b7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProfilePictures\\5e6dbe28-c028-48d8-a614-aae47b554196.jpg",
+      "PackagePath": "staticwebassets\\ProfilePictures\\5e6dbe28-c028-48d8-a614-aae47b554196.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProfilePictures\\819ede50-cfc9-4aa6-9d4c-43f770bb5a6a.webp",
+      "PackagePath": "staticwebassets\\ProfilePictures\\819ede50-cfc9-4aa6-9d4c-43f770bb5a6a.webp"
+    },
+    {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProfilePictures\\b84ce270-70e5-419c-b44f-cf993dc4259b.webp",
+      "PackagePath": "staticwebassets\\ProfilePictures\\b84ce270-70e5-419c-b44f-cf993dc4259b.webp"
+    },
+    {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProfilePictures\\f82ce6c0-237c-4d0e-8496-eb20ca6b987e.webp",
+      "PackagePath": "staticwebassets\\ProfilePictures\\f82ce6c0-237c-4d0e-8496-eb20ca6b987e.webp"
+    },
+    {
       "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\064507f0-b20a-4fdb-9634-086081a09bc9.jpg",
       "PackagePath": "staticwebassets\\ProjectPictures\\064507f0-b20a-4fdb-9634-086081a09bc9.jpg"
     },
@@ -33,12 +53,32 @@
       "PackagePath": "staticwebassets\\ProjectPictures\\304c5bbb-af3d-4873-89f2-abb936b736e7.webp"
     },
     {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\372acecd-f119-40aa-becf-74d5e5bdd2a9.jpg",
+      "PackagePath": "staticwebassets\\ProjectPictures\\372acecd-f119-40aa-becf-74d5e5bdd2a9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\3e7a326c-95af-4059-92ce-4707c868b0da.jpg",
+      "PackagePath": "staticwebassets\\ProjectPictures\\3e7a326c-95af-4059-92ce-4707c868b0da.jpg"
+    },
+    {
       "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\572cd991-abb0-40c6-88f5-968850225091.webp",
       "PackagePath": "staticwebassets\\ProjectPictures\\572cd991-abb0-40c6-88f5-968850225091.webp"
     },
     {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\61543939-3dce-4d63-9b95-4eb1602e7bca.webp",
+      "PackagePath": "staticwebassets\\ProjectPictures\\61543939-3dce-4d63-9b95-4eb1602e7bca.webp"
+    },
+    {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\63b0173c-cade-4af3-b145-1eca497420e4.webp",
+      "PackagePath": "staticwebassets\\ProjectPictures\\63b0173c-cade-4af3-b145-1eca497420e4.webp"
+    },
+    {
       "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\75fde28e-e2a5-454a-b1d3-a0efaf6f8277.jpg",
       "PackagePath": "staticwebassets\\ProjectPictures\\75fde28e-e2a5-454a-b1d3-a0efaf6f8277.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\855cd3aa-c2a3-491a-8f42-ef451da1cff4.jpg",
+      "PackagePath": "staticwebassets\\ProjectPictures\\855cd3aa-c2a3-491a-8f42-ef451da1cff4.jpg"
     },
     {
       "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\8b5e0de9-5a8a-4d45-9b18-4eefa827d410.jpg",
@@ -53,6 +93,10 @@
       "PackagePath": "staticwebassets\\ProjectPictures\\93f62206-83cc-4d79-b6ec-c86ed66a07d7.jpg"
     },
     {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\9e16f087-1426-4e07-b906-e87e3061dda5.webp",
+      "PackagePath": "staticwebassets\\ProjectPictures\\9e16f087-1426-4e07-b906-e87e3061dda5.webp"
+    },
+    {
       "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\add6c3ec-356a-4f4e-ac44-e4f7b4663fa1.webp",
       "PackagePath": "staticwebassets\\ProjectPictures\\add6c3ec-356a-4f4e-ac44-e4f7b4663fa1.webp"
     },
@@ -63,6 +107,10 @@
     {
       "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b5278821-c04a-4b8d-9eb8-21dd20620fe2.jpg",
       "PackagePath": "staticwebassets\\ProjectPictures\\b5278821-c04a-4b8d-9eb8-21dd20620fe2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b58d2c89-fbb7-421d-91c1-74013fb872fc.webp",
+      "PackagePath": "staticwebassets\\ProjectPictures\\b58d2c89-fbb7-421d-91c1-74013fb872fc.webp"
     },
     {
       "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\b648561a-fad1-40d6-87b6-402b08a3a745.jpg",
@@ -81,6 +129,10 @@
       "PackagePath": "staticwebassets\\ProjectPictures\\c42bcb6c-0854-4959-b801-c05e959e647a.jpg"
     },
     {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c7d4a687-7165-441c-b848-db3ef8926a1d.webp",
+      "PackagePath": "staticwebassets\\ProjectPictures\\c7d4a687-7165-441c-b848-db3ef8926a1d.webp"
+    },
+    {
       "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\c93fb448-6e72-4c2e-b952-e91c89624e38.webp",
       "PackagePath": "staticwebassets\\ProjectPictures\\c93fb448-6e72-4c2e-b952-e91c89624e38.webp"
     },
@@ -91,6 +143,10 @@
     {
       "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\d51f3333-cb36-4297-9fe3-6388307f1abb.webp",
       "PackagePath": "staticwebassets\\ProjectPictures\\d51f3333-cb36-4297-9fe3-6388307f1abb.webp"
+    },
+    {
+      "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\e7462063-18b9-4690-9375-4d82b69b9e43.jpg",
+      "PackagePath": "staticwebassets\\ProjectPictures\\e7462063-18b9-4690-9375-4d82b69b9e43.jpg"
     },
     {
       "Id": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\wwwroot\\ProjectPictures\\e79e5b75-41d3-440b-a3d5-3d3b4481bab6.jpg",

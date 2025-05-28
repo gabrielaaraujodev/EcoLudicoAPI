@@ -1,12 +1,156 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|c:\\users\\gabriel araujo (dev)\\source\\repos\\ecoludicoapi\\ecoludicoapi\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|solutionrelative:ecoludicoapi\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|c:\\users\\gabriel araujo (dev)\\source\\repos\\ecoludicoapi\\ecoludicoapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|solutionrelative:ecoludicoapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|c:\\users\\gabriel araujo (dev)\\source\\repos\\ecoludicoapi\\ecoludicoapi\\dtos\\favoriteprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|solutionrelative:ecoludicoapi\\dtos\\favoriteprojectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|c:\\users\\gabriel araujo (dev)\\source\\repos\\ecoludicoapi\\ecoludicoapi\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|solutionrelative:ecoludicoapi\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|c:\\users\\gabriel araujo (dev)\\source\\repos\\ecoludicoapi\\ecoludicoapi\\repositories\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|solutionrelative:ecoludicoapi\\repositories\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|c:\\users\\gabriel araujo (dev)\\source\\repos\\ecoludicoapi\\ecoludicoapi\\repositories\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|solutionrelative:ecoludicoapi\\repositories\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|c:\\users\\gabriel araujo (dev)\\source\\repos\\ecoludicoapi\\ecoludicoapi\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|solutionrelative:ecoludicoapi\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|c:\\users\\gabriel araujo (dev)\\source\\repos\\ecoludicoapi\\ecoludicoapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C37B6AAD-C2F7-489B-822A-1296E86CDB3F}|EcoLudicoAPI\\EcoLudicoAPI.csproj|solutionrelative:ecoludicoapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "EcoLudicoAPI\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "EcoLudicoAPI\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:35:48.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "EcoLudicoAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "EcoLudicoAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowKsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:33:48.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FavoriteProjectDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\DTOS\\FavoriteProjectDTO.cs",
+              "RelativeDocumentMoniker": "EcoLudicoAPI\\DTOS\\FavoriteProjectDTO.cs",
+              "ToolTip": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\DTOS\\FavoriteProjectDTO.cs",
+              "RelativeToolTip": "EcoLudicoAPI\\DTOS\\FavoriteProjectDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:33:27.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "EcoLudicoAPI\\Models\\Project.cs",
+              "ToolTip": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Models\\Project.cs",
+              "RelativeToolTip": "EcoLudicoAPI\\Models\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:32:51.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Repositories\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "EcoLudicoAPI\\Repositories\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Repositories\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "EcoLudicoAPI\\Repositories\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:32:09.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Repositories\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "EcoLudicoAPI\\Repositories\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Repositories\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "EcoLudicoAPI\\Repositories\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:31:57.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "EcoLudicoAPI\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "EcoLudicoAPI\\Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:31:52.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "EcoLudicoAPI\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\Gabriel Araujo (Dev)\\source\\repos\\EcoLudicoAPI\\EcoLudicoAPI\\Repositories\\Repository.cs",
+              "RelativeToolTip": "EcoLudicoAPI\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T18:31:43.437Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
